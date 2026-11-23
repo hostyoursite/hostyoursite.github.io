@@ -1,0 +1,5257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>App Box | Transforming Ideas Into Impact — Websites, Web Apps &amp; Ready Code Files</title>
+<meta name="description" content="App Box by Purushottam Giri — Transforming Ideas Into Impact. Build fast, modern websites, WhatsApp stores, custom web apps &amp; ready-to-use code files, then grow with Paradoverse.">
+<meta name="keywords" content="App Box, Purushottam Giri, Transforming Ideas Into Impact, website building India, ready-to-use code files, landing page, WhatsApp store, custom web app, GitHub Pages hosting, Paradoverse">
+<meta name="author" content="Purushottam Giri">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+<!-- Favicon: PNG primary + embedded Paradoverse-inspired SVG fallback -->
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%230A84FF'/%3E%3Cstop offset='55%25' stop-color='%230071E3'/%3E%3Cstop offset='100%25' stop-color='%2338BDF8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='%23090C14' stroke='url(%23g)' stroke-width='3'/%3E%3Cpath d='M32 11 L50 21.5 L50 42.5 L32 53 L14 42.5 L14 21.5 Z' fill='%230F213E' stroke='url(%23g)' stroke-width='2.6' stroke-linejoin='round'/%3E%3Cpath d='M14 21.5 L32 32 L50 21.5 M32 32 L32 53' stroke='url(%23g)' stroke-width='2' stroke-linecap='round' opacity='0.75'/%3E%3Cpath d='M25 27.5 L20 32 L25 36.5 M39 27.5 L44 32 L39 36.5 M34 25.5 L30 38.5' stroke='%23FFFFFF' stroke-width='2.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<!-- Open Graph / WhatsApp / Instagram Preview Metadata -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="App Box">
+<meta property="og:title" content="App Box | Transforming Ideas Into Impact">
+<meta property="og:description" content="Founded by Purushottam Giri. Build fast websites, WhatsApp stores, web apps &amp; ready-to-use code files here — and promote with Paradoverse.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="APP BOX | Transforming Ideas Into Impact">
+<meta name="twitter:description" content="Websites, custom web apps &amp; ready-to-use code files by Purushottam Giri.">
+
+<!-- Google Search Structured Data (Schema.org JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "App Box",
+  "alternateName": "App Box | Transforming Ideas Into Impact",
+  "description": "App Box builds fast, modern websites, WhatsApp stores, custom web apps, and ready-to-use code files — transforming ideas into impact alongside growth partner Paradoverse.",
+  "telephone": "+91-62000-67517",
+  "email": "subhamgiri00007@gmail.com",
+  "priceRange": "₹500 - ₹8,999",
+  "founder": {
+    "@type": "Person",
+    "name": "Purushottam Giri",
+    "sameAs": [
+      "https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag=="
+    ]
+  },
+  "sameAs": [
+    "https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==",
+    "https://paradoverse.github.io/"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "App Box Website & Code File Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ready-to-Use Code Files", "description": "Clean HTML/CSS/JS starter files ready to edit & host." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Website Redesign & Bug Fix", "description": "Speed optimization, mobile fixes & modern dark UI refresh." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Single-Page / Landing Page", "description": "Responsive landing page with WhatsApp order flow." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Business Website (4–6 Pages)", "description": "Multi-section business site with services, FAQ, forms & SEO." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-Commerce / WhatsApp Store", "description": "Interactive cart, product search, categories & WhatsApp/UPI checkout." } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Web App (Auth & DB)", "description": "Email OTP login, saved accounts, order history, receipts & custom tools." } }
+    ]
+  }
+}
+</script>
+
+<!-- Lightweight Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* =========================================================
+   APP BOX — ZERO-LAG 60FPS DARK GLASSMORPHIC DESIGN SYSTEM
+   Zero backdrop-filter blurs, Zero infinite animations
+   ========================================================= */
+:root {
+  color-scheme: dark;
+  --bg: #050609;
+  --bg-elevated: #0E1118;
+  --bg-card: #111521;
+  --bg-card-active: #13223D;
+  --bg-input: #080A10;
+  --border: rgba(255, 255, 255, 0.12);
+  --border-strong: rgba(255, 255, 255, 0.24);
+  --border-accent: rgba(56, 189, 248, 0.65);
+  --text: #FFFFFF;
+  --text-secondary: #CBD5E1;
+  --text-muted: #8E99A8;
+  --accent: #0A84FF;
+  --accent-vivid: #0071E3;
+  --accent-sky: #38BDF8;
+  --live: #30D158;
+  --danger: #FF453A;
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  min-height: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  background: var(--bg);
+  scroll-padding-top: 96px;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 100%;
+  overflow-x: clip;
+  background:
+    radial-gradient(ellipse 80% 38% at 50% -6%, rgba(14, 165, 233, 0.12), transparent 62%),
+    var(--bg);
+  color: var(--text);
+  font: 400 15px/1.6 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 106px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent-sky);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.ic {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ic-sm {
+  width: 13.5px;
+  height: 13.5px;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wrap {
+  width: min(100% - 28px, 1140px);
+  margin-inline: auto;
+}
+
+/* Scroll Progress Hairline (GPU transform only) */
+.ab-scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2.5px;
+  z-index: 280;
+  background: linear-gradient(90deg, var(--accent-vivid), var(--accent), var(--accent-sky));
+  transform-origin: left center;
+  transform: scaleX(0);
+  pointer-events: none;
+  will-change: transform;
+}
+
+/* Top Status Bar */
+.status-bar {
+  position: relative;
+  z-index: 102;
+  padding-top: max(5px, env(safe-area-inset-top, 5px));
+  background: #080A10;
+  border-bottom: 1px solid var(--border);
+}
+
+.status-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.status-inner::-webkit-scrollbar {
+  display: none;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: #121723;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+#statusStudioBtn {
+  background: #0E2518;
+  border-color: rgba(48, 209, 88, 0.45);
+  color: #E8FFF0;
+}
+
+.status-pill:hover {
+  background: #1A2132;
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--live);
+  flex-shrink: 0;
+}
+
+.status-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Sticky Header (Solid dark surface — zero blur cost) */
+header#topHeader {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(9, 12, 19, 0.97);
+  border-bottom: 1px solid var(--border);
+}
+
+.bar {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.ab-header-left-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  flex-shrink: 0;
+}
+
+.ab-hamburger-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.5px;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #121723;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.ab-hamburger-btn:hover {
+  background: #1B2234;
+  border-color: var(--border-strong);
+}
+
+.ab-hamburger-btn span {
+  display: block;
+  width: 17px;
+  height: 1.8px;
+  border-radius: 999px;
+  background: var(--text);
+  transition: transform 0.2s var(--ease), opacity 0.15s ease;
+}
+
+.ab-hamburger-btn span:nth-child(2) {
+  width: 12px;
+  align-self: flex-start;
+  margin-left: 9.5px;
+  background: var(--accent-sky);
+}
+
+.ab-hamburger-btn[aria-expanded="true"] span:nth-child(1) {
+  transform: translate3d(0, 6.3px, 0) rotate(45deg);
+}
+
+.ab-hamburger-btn[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.ab-hamburger-btn[aria-expanded="true"] span:nth-child(3) {
+  transform: translate3d(0, -6.3px, 0) rotate(-45deg);
+}
+
+.brand-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 3px 6px 3px 2px;
+  border: 0;
+  border-radius: 12px;
+  background: transparent;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text);
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  flex-shrink: 0;
+}
+
+.brand-logo-svg {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 9px;
+}
+
+.brand-lockup-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: left;
+}
+
+.brand-lockup-sub {
+  font-family: Inter, sans-serif;
+  font-size: 9.8px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Sliding Pill Navigation */
+nav[aria-label="Main"] {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 4px;
+  border-radius: 999px;
+  background: #111622;
+  border: 1px solid var(--border);
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+nav[aria-label="Main"]::-webkit-scrollbar {
+  display: none;
+}
+
+.liquid-pill {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 0;
+  z-index: 0;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0A84FF 0%, #0071E3 55%, #38BDF8 100%);
+  pointer-events: none;
+  transition: transform 0.22s var(--ease), width 0.22s var(--ease);
+  will-change: transform, width;
+}
+
+.nav-tab {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: color 0.14s ease;
+}
+
+.nav-tab:hover,
+.nav-tab.active {
+  color: var(--text);
+}
+
+.nav-tab.active {
+  font-weight: 600;
+}
+
+/* Header Action Controls */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex-shrink: 0;
+}
+
+.ab-top-auth-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  max-width: 165px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #121723;
+  color: var(--text);
+  font-size: 12.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.ab-top-auth-btn:hover {
+  background: #1B2234;
+  border-color: var(--border-strong);
+}
+
+.ab-top-auth-btn.signed-in {
+  border-color: rgba(48, 209, 88, 0.55);
+  background: #0F281A;
+}
+
+.cart-trigger-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 13px;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 211, 252, 0.45);
+  background: linear-gradient(135deg, #0A84FF 0%, #0071E3 55%, #38BDF8 100%);
+  color: var(--text);
+  font-size: 12.6px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+  transition: transform 0.14s var(--ease);
+}
+
+.cart-trigger-btn:active {
+  transform: scale(0.97);
+}
+
+.mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #121723;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.mode-toggle:hover {
+  background: #1B2234;
+  color: var(--text);
+}
+
+/* Main & Default Tab Mode */
+main.wrap {
+  position: relative;
+  display: block;
+  padding-bottom: 24px;
+}
+
+main.wrap.single-tab-mode > section[data-page] {
+  display: none;
+  border-top: 0;
+}
+
+main.wrap.single-tab-mode > section[data-page].active-page {
+  display: block;
+}
+
+/* Typography */
+h1, h2, h3, .price {
+  font-family: Outfit, Inter, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  font-size: clamp(26px, 4vw, 40px);
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+p {
+  line-height: 1.58;
+  overflow-wrap: anywhere;
+}
+
+/* Hero Showcase */
+.hero {
+  padding: clamp(16px, 3vh, 26px) 0 24px;
+  text-align: center;
+  border-top: 0;
+}
+
+.hero-top-showcase {
+  width: 100%;
+  padding: clamp(30px, 5vh, 56px) clamp(18px, 4vw, 44px);
+  border-radius: 26px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  background:
+    radial-gradient(ellipse 68% 50% at 50% -10%, rgba(56, 189, 248, 0.16), transparent 64%),
+    linear-gradient(165deg, #131B2E 0%, #0B0F18 65%, #080B12 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 15px;
+  margin-bottom: 16px;
+  border-radius: 999px;
+  background: #16223A;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  color: #E0F2FE;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.hero-badge:hover {
+  border-color: var(--accent-sky);
+}
+
+.hero-top-showcase h1 {
+  width: 100%;
+  max-width: 900px;
+  font-size: clamp(34px, 6.4vw, 74px);
+  line-height: 1.02;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.hero-top-showcase p {
+  max-width: 660px;
+  margin: 14px auto 0;
+  color: var(--text-secondary);
+  font-size: clamp(14.5px, 1.8vw, 17.5px);
+}
+
+.partner-inline-link {
+  color: var(--accent-sky);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.partner-inline-link:hover {
+  color: var(--text);
+}
+
+.steps-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.step-pill {
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: #141B2B;
+  border: 1px solid var(--border);
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.step-pill strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Buttons */
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 10px 20px;
+  border: 1px solid rgba(186, 230, 253, 0.4);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0A84FF 0%, #0071E3 55%, #38BDF8 100%);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  touch-action: manipulation;
+  transition: transform 0.14s var(--ease), filter 0.14s ease, border-color 0.14s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.08);
+  border-color: rgba(255, 255, 255, 0.65);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn.ghost {
+  background: #151B29;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.btn.ghost:hover {
+  background: #1E263A;
+  border-color: var(--border-strong);
+  filter: none;
+}
+
+.btn.wa-btn {
+  background: linear-gradient(135deg, #22C55E 0%, #16A34A 100%);
+  border-color: rgba(187, 247, 208, 0.45);
+}
+
+.btn.ig-btn {
+  background: linear-gradient(135deg, #EC4899 0%, #A855F7 55%, #F97316 100%);
+  border-color: rgba(255, 255, 255, 0.32);
+}
+
+.btn.pv-btn {
+  background: linear-gradient(135deg, #0EA5E9 0%, #0A84FF 55%, #6366F1 100%);
+  border-color: rgba(186, 230, 253, 0.55);
+}
+
+.btn.sm {
+  min-height: 36px;
+  padding: 7px 14px;
+  font-size: 12.6px;
+}
+
+/* Sections */
+section {
+  padding: clamp(24px, 4vw, 44px) 0;
+  border-top: 1px solid var(--border);
+}
+
+section > h2,
+section > p.sub {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub {
+  max-width: 640px;
+  margin: 0 auto 22px;
+  color: var(--text-secondary);
+  font-size: 14.8px;
+}
+
+/* Search Bar */
+.ab-search-wrap {
+  max-width: 480px;
+  margin: 0 auto 14px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ab-search-input {
+  width: 100%;
+  padding: 11px 40px 11px 40px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  font-size: 14px;
+}
+
+.ab-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.ab-search-input:focus {
+  border-color: var(--accent-sky);
+  outline: none;
+}
+
+.ab-search-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--accent-sky);
+  pointer-events: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.ab-search-clear {
+  position: absolute;
+  right: 9px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 0;
+  background: #232B3D;
+  color: var(--text);
+  font-size: 12px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab-empty-search {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 28px 16px;
+  border-radius: 18px;
+  border: 1px dashed var(--border-strong);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+}
+
+/* Filter Pills */
+.pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.opt-pill {
+  min-height: 36px;
+  padding: 7px 15px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #121723;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.opt-pill:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.opt-pill.active {
+  background: linear-gradient(135deg, #0A84FF 0%, #38BDF8 100%);
+  border-color: rgba(186, 230, 253, 0.5);
+  color: var(--text);
+}
+
+/* Grids & Crisp Layered Cards (Zero backdrop-filter) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
+  gap: 14px;
+}
+
+.growth-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: 16px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.95fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.card, details {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: linear-gradient(160deg, #141A28 0%, #0D1018 100%);
+}
+
+.card {
+  min-width: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.15s ease;
+}
+
+.card:hover {
+  border-color: rgba(125, 211, 252, 0.42);
+}
+
+.card.in-cart {
+  border-color: var(--border-accent);
+  background: linear-gradient(160deg, #152542 0%, #0E1626 100%);
+}
+
+.card.partner-highlight {
+  border-color: rgba(56, 189, 248, 0.5);
+  background: linear-gradient(160deg, #12213B 0%, #0C1424 100%);
+}
+
+.col-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.col-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #152541;
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #E0F2FE;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.col-tag.free-tag {
+  background: #0F291A;
+  border-color: rgba(48, 209, 88, 0.42);
+  color: #DCFCE7;
+}
+
+.price-badge {
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 16.5px;
+  font-weight: 700;
+  color: #7DD3FC;
+}
+
+.price-badge.free {
+  color: #86EFAC;
+}
+
+.price {
+  font-size: clamp(24px, 3vw, 31px);
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.card p, .card li, details p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid var(--border);
+}
+
+.cart-add-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(125, 211, 252, 0.4);
+  background: #162A4C;
+  color: var(--text);
+  font-size: 12.6px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.cart-add-btn:hover {
+  background: var(--accent);
+  border-color: var(--accent-sky);
+}
+
+.cart-add-btn.added {
+  background: #11311E;
+  border-color: rgba(48, 209, 88, 0.65);
+  color: #E8FFF0;
+}
+
+.quick-wa-mini {
+  min-height: 36px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #171D2C;
+  color: var(--text-secondary);
+  font-size: 12.2px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.quick-wa-mini:hover {
+  background: #222A3E;
+  color: var(--text);
+}
+
+/* Inline Card Quantity Stepper */
+.card-qty-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 6px;
+  border-radius: 999px;
+  border: 1px solid var(--border-accent);
+  background: #162C50;
+}
+
+.card-qty-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: #0A0F1B;
+  color: var(--text);
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  touch-action: manipulation;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-qty-btn:hover {
+  background: var(--accent);
+}
+
+.card-qty-val {
+  min-width: 22px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+/* Founder & Ecosystem Boxes */
+.founder-banner {
+  margin-top: 18px;
+}
+
+.founder-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 10px;
+}
+
+.founder-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--text);
+  background: linear-gradient(135deg, #0A84FF, #38BDF8);
+}
+
+.eco-steps {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.eco-step {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #0B0F17;
+}
+
+.eco-step-title {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.eco-step p {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+/* FAQ */
+details {
+  padding: 15px 18px;
+  margin-bottom: 10px;
+}
+
+details[open] {
+  border-color: rgba(125, 211, 252, 0.38);
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--text);
+  list-style-position: inside;
+}
+
+details p {
+  margin-top: 8px;
+}
+
+/* Smart Order Builder Form & Chips */
+form {
+  display: grid;
+  gap: 14px;
+}
+
+.ab-form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+label, .field-label {
+  display: grid;
+  gap: 6px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.field-hint {
+  font-weight: 400;
+  color: var(--text-muted);
+  font-size: 11.8px;
+}
+
+input, select, textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 11px 13px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-input);
+  color: var(--text);
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-sky);
+}
+
+.ab-preset-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: #0F1B30;
+  border: 1px solid rgba(56, 189, 248, 0.28);
+}
+
+.ab-preset-title {
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #7DD3FC;
+  margin-bottom: 2px;
+}
+
+.ab-chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.ab-chip {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #151B29;
+  color: var(--text-secondary);
+  font-size: 12.2px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ab-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.ab-chip.active {
+  border-color: rgba(186, 230, 253, 0.65);
+  background: linear-gradient(135deg, #0A84FF, #38BDF8);
+  color: var(--text);
+}
+
+.ab-priority-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.ab-priority-btn {
+  padding: 9px 8px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: #151B29;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ab-priority-btn.active {
+  border-color: rgba(186, 230, 253, 0.65);
+  background: linear-gradient(135deg, #0A84FF, #38BDF8);
+  color: var(--text);
+}
+
+/* Sticky Auto-Message Preview Card */
+.ab-preview-sticky {
+  position: sticky;
+  top: 82px;
+}
+
+.ab-preview-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.ab-mini-link-btn {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #151B29;
+  color: var(--text-secondary);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ab-mini-link-btn.active {
+  background: #163360;
+  border-color: var(--accent-sky);
+  color: var(--text);
+}
+
+.msg-preview-box {
+  margin-top: 8px;
+  padding: 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  background: #07090F;
+  font-family: Inter, -apple-system, sans-serif;
+  font-size: 12.6px;
+  line-height: 1.55;
+  color: #E2E8F0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  max-height: 290px;
+  overflow-y: auto;
+}
+
+.msg-edit-textarea {
+  margin-top: 8px;
+  min-height: 210px;
+  font-size: 12.6px;
+  line-height: 1.55;
+  border-color: var(--accent-sky);
+}
+
+.send-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.stack {
+  display: grid;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.stack .btn {
+  width: 100%;
+}
+
+.ab-account-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px 13px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  background: #141A26;
+  font-size: 12.5px;
+  color: var(--text-secondary);
+}
+
+.ab-account-strip.signed-in {
+  border-color: rgba(48, 209, 88, 0.45);
+  background: #0F2619;
+  color: var(--text);
+}
+
+.ab-inline-login-btn {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(186, 230, 253, 0.4);
+  background: linear-gradient(135deg, #0A84FF, #38BDF8);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Drawers & Modals (Zero backdrop-filter) */
+.cart-backdrop,
+.ab-side-backdrop,
+.ab-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(3, 5, 10, 0.82);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+
+.cart-backdrop {
+  z-index: 250;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ab-side-backdrop {
+  z-index: 260;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.ab-modal-backdrop {
+  z-index: 270;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.cart-backdrop.open,
+.ab-side-backdrop.open,
+.ab-modal-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cart-drawer {
+  width: min(100vw, 420px);
+  height: 100%;
+  background: var(--bg-elevated);
+  border-left: 1px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.22s var(--ease);
+  will-change: transform;
+}
+
+.cart-backdrop.open .cart-drawer {
+  transform: translate3d(0, 0, 0);
+}
+
+.cart-header,
+.ab-modal-head,
+.ab-side-head {
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ab-side-head {
+  padding-top: max(15px, env(safe-area-inset-top, 15px));
+}
+
+.cart-close-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #181E2E;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  touch-action: manipulation;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-close-btn:hover {
+  background: var(--accent);
+}
+
+.cart-items-list,
+.ab-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-item-row,
+.ab-order-card {
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: #131925;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cart-item-top,
+.cart-item-bottom,
+.ab-order-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cart-item-top {
+  align-items: flex-start;
+}
+
+.ab-order-top {
+  flex-wrap: wrap;
+}
+
+.qty-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #080B12;
+  border: 1px solid var(--border);
+}
+
+.qty-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: #162A4C;
+  color: var(--text);
+  font-weight: 700;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.qty-btn:hover {
+  background: var(--accent);
+}
+
+.cart-remove-btn {
+  border: 0;
+  background: transparent;
+  color: var(--danger);
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.cart-footer {
+  padding: 14px 16px 18px;
+  border-top: 1px solid var(--border);
+  background: #080A10;
+}
+
+.cart-quick-name {
+  margin-bottom: 10px;
+  padding: 9px 12px;
+  font-size: 13px;
+  border-radius: 11px;
+}
+
+.cart-total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cart-total-amount {
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #7DD3FC;
+}
+
+/* Left Slide-Out Drawer */
+.ab-side-drawer {
+  width: min(88vw, 330px);
+  height: 100%;
+  background: var(--bg-elevated);
+  border-right: 1px solid var(--border-strong);
+  display: flex;
+  flex-direction: column;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform 0.22s var(--ease);
+  overflow: hidden;
+  will-change: transform;
+}
+
+.ab-side-backdrop.open .ab-side-drawer {
+  transform: translate3d(0, 0, 0);
+}
+
+.ab-side-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text);
+}
+
+.ab-side-account-box {
+  margin: 12px 14px 6px;
+  padding: 13px;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+  background: #131925;
+}
+
+.ab-side-account-top {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.ab-avatar-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  background: linear-gradient(135deg, #0A84FF, #38BDF8);
+}
+
+.ab-side-account-meta {
+  min-width: 0;
+  flex: 1;
+}
+
+.ab-side-account-name {
+  font-size: 13.8px;
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ab-side-account-email {
+  font-size: 11.8px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ab-side-account-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.ab-side-account-actions .btn {
+  min-height: 34px;
+  padding: 6px 10px;
+  font-size: 12px;
+  flex: 1;
+}
+
+.ab-side-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: 6px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.ab-side-section-label {
+  padding: 9px 10px 4px;
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.ab-side-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9.5px 12px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13.5px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.ab-side-item:hover {
+  background: #161D2C;
+  color: var(--text);
+}
+
+.ab-side-item.active {
+  background: #15294C;
+  border-color: rgba(56, 189, 248, 0.45);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.ab-side-item.partner-link {
+  border-color: rgba(56, 189, 248, 0.35);
+  background: #102038;
+  color: #E0F2FE;
+  margin-top: 4px;
+}
+
+.ab-side-item-left {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.ab-side-badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #1D2536;
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.ab-side-badge.green {
+  background: #132F52;
+  border-color: rgba(56, 189, 248, 0.55);
+}
+
+.ab-side-footer {
+  padding: 12px 14px max(14px, env(safe-area-inset-bottom, 14px));
+  border-top: 1px solid var(--border);
+  background: #080A10;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 7px;
+}
+
+.ab-side-footer a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 36px;
+  padding: 6px;
+  border-radius: 11px;
+  border: 1px solid var(--border);
+  background: #131925;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.ab-side-footer a:hover {
+  background: var(--accent);
+  color: var(--text);
+}
+
+/* Center Modals */
+.ab-modal-card {
+  width: min(100%, 520px);
+  max-height: 86vh;
+  border-radius: 22px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-elevated);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transform: translate3d(0, 14px, 0);
+  opacity: 0;
+  transition: transform 0.2s var(--ease), opacity 0.16s ease;
+  will-change: transform, opacity;
+}
+
+.ab-modal-backdrop.open .ab-modal-card {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.ab-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.ab-stat-box {
+  padding: 12px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  background: #131925;
+}
+
+.ab-stat-label {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+}
+
+.ab-stat-val {
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+.ab-order-id {
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.ab-order-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.ab-order-items {
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.ab-order-actions {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+/* === APPWRITE LIVE EMAIL OTP MODAL === */
+body.ab-locked {
+  overflow: hidden !important;
+}
+
+.ab-gate-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: rgba(3, 5, 10, 0.88);
+  overflow-y: auto;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.18s ease, visibility 0.18s ease;
+}
+
+.ab-gate-overlay.ab-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.ab-gate-card {
+  position: relative;
+  width: 100%;
+  max-width: 424px;
+  padding: 26px 22px 20px;
+  border-radius: 24px;
+  border: 1px solid rgba(125, 211, 252, 0.35);
+  background: #101520;
+  color: var(--text);
+  transform: translate3d(0, 14px, 0);
+  opacity: 0;
+  transition: transform 0.2s var(--ease), opacity 0.18s ease;
+  will-change: transform, opacity;
+}
+
+.ab-gate-overlay.ab-open .ab-gate-card {
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.ab-close-x {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #192030;
+  color: var(--text);
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ab-close-x:hover {
+  background: var(--accent);
+}
+
+.ab-gate-head {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.ab-shield-wrap {
+  width: 52px;
+  height: 52px;
+  margin: 0 auto 10px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #13223A;
+  border: 1px solid rgba(125, 211, 252, 0.38);
+}
+
+.ab-shield-wrap.verified {
+  background: #15803D;
+  border-color: #86EFAC;
+}
+
+.ab-gate-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: #171F30;
+  border: 1px solid var(--border);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.ab-gate-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-sky);
+}
+
+.ab-gate-head h2 {
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.ab-gate-head p {
+  font-size: 13.2px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.ab-steps-dots {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.ab-step-dot {
+  height: 4px;
+  width: 8px;
+  border-radius: 999px;
+  background: #283247;
+  transition: width 0.2s var(--ease), background 0.18s ease;
+}
+
+.ab-step-dot.active {
+  width: 24px;
+  background: var(--accent-sky);
+}
+
+.ab-gate-group {
+  margin-bottom: 13px;
+}
+
+.ab-gate-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 7px;
+}
+
+.ab-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.ab-input-icon {
+  position: absolute;
+  left: 13px;
+  width: 17px;
+  height: 17px;
+  color: var(--accent-sky);
+  pointer-events: none;
+}
+
+.ab-gate-input {
+  width: 100%;
+  padding: 12px 14px 12px 40px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  background: var(--bg-input);
+  color: var(--text);
+  font-size: 14.5px;
+}
+
+.ab-target-chip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 9px 13px;
+  border-radius: 13px;
+  background: #161E2E;
+  border: 1px solid var(--border);
+  margin-bottom: 13px;
+}
+
+.ab-target-text {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ab-edit-pill {
+  flex-shrink: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-strong);
+  background: #1F283D;
+  color: var(--text);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ab-otp-boxes {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 7px;
+  margin-bottom: 13px;
+}
+
+.ab-otp-digit {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  font-family: Outfit, Inter, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 11px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-input);
+  color: var(--text);
+}
+
+.ab-otp-digit.filled {
+  border-color: var(--accent-sky);
+  background: #122440;
+}
+
+.ab-gate-btn {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid rgba(186, 230, 253, 0.45);
+  border-radius: 13px;
+  background: linear-gradient(135deg, #0A84FF 0%, #0071E3 55%, #38BDF8 100%);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ab-gate-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ab-skip-btn {
+  width: 100%;
+  margin-top: 9px;
+  padding: 11px 15px;
+  border-radius: 13px;
+  border: 1px solid var(--border);
+  background: #161D2C;
+  color: var(--text);
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ab-skip-btn:hover {
+  background: #20293E;
+}
+
+.ab-gate-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 13px;
+  font-size: 12.2px;
+}
+
+.ab-link-btn {
+  background: none;
+  border: none;
+  color: var(--accent-sky);
+  font-size: 12.2px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.ab-link-btn:disabled {
+  color: var(--text-muted);
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+.ab-gate-msg {
+  display: none;
+  margin-bottom: 11px;
+  padding: 9px 12px;
+  border-radius: 11px;
+  font-size: 12.3px;
+  line-height: 1.45;
+}
+
+.ab-gate-msg.show { display: block; }
+.ab-gate-msg.error {
+  background: #2D1214;
+  border: 1px solid rgba(255, 69, 58, 0.48);
+  color: #FFD1CE;
+}
+.ab-gate-msg.info {
+  background: #10233E;
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  color: var(--text);
+}
+.ab-gate-msg.success {
+  background: #0F2B1A;
+  border: 1px solid rgba(48, 209, 88, 0.5);
+  color: #E8FFF0;
+}
+
+.ab-gate-footer {
+  margin-top: 15px;
+  padding-top: 11px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11.5px;
+  color: var(--text-muted);
+}
+
+.ab-mode-badge {
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: #0F291A;
+  border: 1px solid rgba(48, 209, 88, 0.45);
+  color: #DCFCE7;
+  font-weight: 600;
+}
+
+.ab-step-hidden { display: none !important; }
+
+/* Floating Bottom Convenience Dock */
+.convenience-dock {
+  position: fixed;
+  bottom: max(10px, env(safe-area-inset-bottom, 10px));
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 150;
+  width: min(calc(100vw - 20px), 860px);
+  padding: 9px 12px;
+  border-radius: 20px;
+  background: #0C101A;
+  border: 1px solid var(--border-strong);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.dock-info {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.dock-text {
+  font-size: 12.8px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dock-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.dock-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+/* Back to Top Button */
+.ab-back-top {
+  position: fixed;
+  right: 14px;
+  bottom: 82px;
+  z-index: 145;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--border-strong);
+  background: #131926;
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  opacity: 0;
+  transform: translate3d(0, 10px, 0);
+  pointer-events: none;
+  transition: opacity 0.18s ease, transform 0.18s var(--ease);
+}
+
+.ab-back-top.visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  pointer-events: auto;
+}
+
+.ab-back-top:hover {
+  background: var(--accent);
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  bottom: 76px;
+  left: 50%;
+  z-index: 300;
+  transform: translate3d(-50%, 10px, 0);
+  opacity: 0;
+  pointer-events: none;
+  padding: 9px 15px;
+  border-radius: 999px;
+  background: #121A2A;
+  border: 1px solid rgba(125, 211, 252, 0.45);
+  color: var(--text);
+  font-size: 12.8px;
+  font-weight: 600;
+  white-space: nowrap;
+  max-width: calc(100vw - 28px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: transform 0.18s var(--ease), opacity 0.16s ease;
+}
+
+.toast.show {
+  transform: translate3d(-50%, 0, 0);
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  margin-top: 24px;
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer-nav, .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 14px;
+  flex-wrap: wrap;
+  margin: 0 auto 10px;
+}
+
+.footer-nav button {
+  padding: 5px 11px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text-secondary);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer-nav button:hover {
+  color: var(--text);
+  background: #171F30;
+}
+
+.footer-links a {
+  color: var(--accent-sky);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.footer-links a:hover {
+  color: var(--text);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 860px) {
+  .checkout-grid {
+    grid-template-columns: 1fr;
+  }
+  .ab-preview-sticky {
+    position: static;
+  }
+}
+
+@media (max-width: 760px) {
+  body { padding-bottom: 142px; }
+  .bar {
+    flex-wrap: wrap;
+    row-gap: 8px;
+    padding: 8px 0;
+  }
+  .ab-header-left-group {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .brand-lockup-sub { display: none; }
+  nav[aria-label="Main"] { order: 3; width: 100%; }
+  .header-actions {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+  .ab-top-auth-btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+    padding: 6px 11px;
+    font-size: 12px;
+    justify-content: flex-start;
+  }
+  .cart-trigger-btn,
+  .mode-toggle {
+    flex-shrink: 0;
+    min-height: 34px;
+    padding: 5px 10px;
+    font-size: 11.8px;
+  }
+  .hero-top-showcase {
+    border-radius: 20px;
+    padding: 26px 15px 24px;
+  }
+  .ab-form-row-2,
+  .ab-priority-row {
+    grid-template-columns: 1fr;
+  }
+  .ab-back-top {
+    bottom: 134px;
+    right: 12px;
+  }
+  .convenience-dock {
+    border-radius: 18px;
+    padding: 9px 11px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+  .dock-info {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .dock-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    gap: 6px;
+  }
+  .dock-actions .btn {
+    width: 100%;
+    padding: 7px 8px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .ab-gate-card { padding: 22px 16px 16px; border-radius: 20px; }
+  .ab-otp-digit { height: 44px; font-size: 18px; }
+  .ab-otp-boxes { gap: 5px; }
+  .send-grid-2 { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="ab-scroll-progress" id="abScrollProgress" aria-hidden="true"></div>
+
+<!-- Top Interactive Status Bar -->
+<div class="status-bar" role="region" aria-label="App Box Status Bar">
+  <div class="wrap status-inner">
+    <button type="button" class="status-pill" id="statusStudioBtn">
+      <span class="live-dot"></span>
+      <span>App Box Live: Accepting Projects</span>
+    </button>
+    <div class="status-actions">
+      <button type="button" class="status-pill" id="abSignOutBtn" hidden>Sign Out</button>
+      <button type="button" class="status-pill" id="statusFastTrackBtn">24–72h Fast Delivery</button>
+      <a class="status-pill" id="statusWhatsAppBtn" href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">WhatsApp: +91 62000 67517</a>
+      <a class="status-pill" id="statusCopyEmailBtn" href="mailto:subhamgiri00007@gmail.com" target="_blank" rel="noopener noreferrer">subhamgiri00007@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- Sticky Header -->
+<header id="topHeader">
+  <div class="wrap bar">
+    <div class="ab-header-left-group">
+      <button type="button" class="ab-hamburger-btn" id="abMenuBtnHeader" aria-label="Open menu" aria-expanded="false" aria-controls="abSideDrawer">
+        <span></span><span></span><span></span>
+      </button>
+      <button type="button" class="brand-btn" id="brandHomeBtn">
+        <!-- Custom Paradoverse-Inspired App Box SVG Logo -->
+        <svg class="brand-logo-svg" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="abLogoG1" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0A84FF"/>
+              <stop offset="55%" stop-color="#0071E3"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="#090C14" stroke="url(#abLogoG1)" stroke-width="2.6"/>
+          <path d="M32 11 L50 21.5 V42.5 L32 53 L14 42.5 V21.5 Z" fill="#0F213E" stroke="url(#abLogoG1)" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M14 21.5 L32 32 L50 21.5 M32 32 V53" stroke="url(#abLogoG1)" stroke-width="1.9" stroke-linecap="round" opacity="0.75"/>
+          <path d="M25 27.5 L20 32 L25 36.5 M39 27.5 L44 32 L39 36.5 M34 25.5 L30 38.5" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand-lockup-text">
+          <span>APP BOX</span>
+          <span class="brand-lockup-sub">Transforming Ideas Into Impact</span>
+        </span>
+      </button>
+    </div>
+
+    <nav aria-label="Main" id="mainNav">
+      <div class="liquid-pill" id="liquidPill" aria-hidden="true"></div>
+      <button type="button" class="nav-tab active" data-target="home">Home</button>
+      <button type="button" class="nav-tab" data-target="services">Services</button>
+      <button type="button" class="nav-tab" data-target="plans">Plans</button>
+      <button type="button" class="nav-tab" data-target="addons">Add-ons</button>
+      <button type="button" class="nav-tab" data-target="growth">Growth</button>
+      <button type="button" class="nav-tab" data-target="faq">FAQ</button>
+      <button type="button" class="nav-tab" data-target="contact">Order</button>
+    </nav>
+
+    <div class="header-actions">
+      <button type="button" class="ab-top-auth-btn" id="abTopAuthBtn">Login</button>
+      <button type="button" class="cart-trigger-btn" id="openCartHeaderBtn">
+        <svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+        <span>Cart (<span id="headerCartCount">1</span>)</span>
+        <span id="headerCartTotal">₹1,299</span>
+      </button>
+      <button type="button" class="mode-toggle" id="viewModeBtn" title="Switch between instant Tab view and full Scroll view">
+        <span id="viewModeLabel">Tabs</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- TAB MODE ENABLED BY DEFAULT via single-tab-mode -->
+<main class="wrap single-tab-mode" id="mainContainer">
+
+  <!-- 1. HOME (HERO) -->
+  <section id="home" data-page="home" class="hero active-page">
+    <div class="hero-top-showcase">
+      <button type="button" class="hero-badge" id="heroPromoBadge">
+        <span>APP BOX | Transforming Ideas Into Impact &bull; Zero-Typing Order Builder</span>
+      </button>
+      <h1>Transforming Ideas Into Impact.</h1>
+      <p>Build your fast, modern website, WhatsApp store, custom web app, or ready-to-use code files right here on <strong>App Box</strong> — and grow it with our partner agency <a class="partner-inline-link" href="https://paradoverse.github.io/" target="_blank" rel="noopener noreferrer">Paradoverse ↗</a> for video editing &amp; social media promotion.</p>
+
+      <div class="steps-strip">
+        <div class="step-pill"><strong>1. Pick Services / Code Files</strong> — Add to Cart</div>
+        <div class="step-pill"><strong>2. Tap Specs &amp; Add-ons</strong> — Zero typing needed</div>
+        <div class="step-pill"><strong>3. 1-Tap Send</strong> — WhatsApp, Email, or Instagram</div>
+      </div>
+
+      <div class="btns">
+        <button type="button" class="btn" id="heroExploreServicesBtn">Browse Services →</button>
+        <button type="button" class="btn ghost" id="heroOpenCartBtn">
+          <svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span>View Cart (<span id="heroCartCount">1</span>)</span>
+        </button>
+        <button type="button" class="btn ghost" id="heroStartProjectBtn">Build &amp; Send Order</button>
+        <a class="btn ghost" href="https://paradoverse.github.io/" target="_blank" rel="noopener noreferrer">Paradoverse Promo ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. SERVICES -->
+  <section id="services" data-page="services">
+    <h2>1. Pick Your Website or Code Build</h2>
+    <p class="sub">Clean, fast websites and ready-to-use code files built by App Box. Tap <strong>+ Add to Cart</strong> or <strong>Quick Order →</strong> to jump straight to checkout.</p>
+
+    <div class="ab-search-wrap">
+      <span class="ab-search-icon" aria-hidden="true">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+      </span>
+      <input type="search" id="serviceSearchInput" class="ab-search-input" placeholder="Search Code Files, Landing Page, Redesign, Store, Web App..." aria-label="Search services">
+      <button type="button" id="serviceSearchClear" class="ab-search-clear" aria-label="Clear search" hidden>&times;</button>
+    </div>
+
+    <div class="pill-row" role="tablist" aria-label="Filter Services">
+      <button type="button" class="opt-pill active" data-filter="all">All</button>
+      <button type="button" class="opt-pill" data-filter="websites">Websites</button>
+      <button type="button" class="opt-pill" data-filter="apps">Web Apps</button>
+      <button type="button" class="opt-pill" data-filter="code">Code Files</button>
+    </div>
+
+    <div class="grid" id="servicesGrid">
+      <article class="card" data-category="code" data-item-id="svc-code">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Source Code</span>
+            <span class="price-badge">₹599</span>
+          </div>
+          <h3>Ready-to-Use Code Files</h3>
+          <p>Clean HTML/CSS/JS starter files ready to edit &amp; host anywhere with full ownership.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="svc-code" data-cart-name="Ready-to-Use Code Files" data-cart-price="599" data-cart-desc="Clean HTML/CSS/JS starter files ready to edit &amp; host">+ Add to Cart</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="svc-code" data-preset="codefile">Quick Order →</button>
+        </div>
+      </article>
+
+      <article class="card" data-category="websites" data-item-id="svc-redesign">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Upgrade &amp; Fix</span>
+            <span class="price-badge">₹999</span>
+          </div>
+          <h3>Website Redesign &amp; Bug Fix</h3>
+          <p>Speed optimization, mobile layout fixes &amp; modern dark UI refresh for your existing site.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="svc-redesign" data-cart-name="Website Redesign &amp; Bug Fix" data-cart-price="999" data-cart-desc="Speed optimization, mobile fixes &amp; modern dark UI refresh">+ Add to Cart</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="svc-redesign" data-preset="landing">Quick Order →</button>
+        </div>
+      </article>
+
+      <article class="card" data-category="websites" data-item-id="svc-landing">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Most Popular</span>
+            <span class="price-badge">₹1,299</span>
+          </div>
+          <h3>Single-Page / Landing Page</h3>
+          <p>Responsive landing page with sleek UI and instant WhatsApp &amp; Email order flow.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="svc-landing" data-cart-name="Single-Page / Landing Page" data-cart-price="1299" data-cart-desc="Responsive landing page with WhatsApp order flow">+ Add to Cart</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="svc-landing" data-preset="landing">Quick Order →</button>
+        </div>
+      </article>
+
+      <article class="card" data-category="websites" data-item-id="svc-business">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">4–6 Pages</span>
+            <span class="price-badge">₹2,999</span>
+          </div>
+          <h3>Business Website (4–6 Pages)</h3>
+          <p>Multi-section business site with services catalog, FAQ, lead forms &amp; Google SEO setup.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="svc-business" data-cart-name="Business Website (4–6 Pages)" data-cart-price="2999" data-cart-desc="Multi-section business site with services, FAQ, forms &amp; SEO">+ Add to Cart</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="svc-business" data-preset="business">Quick Order →</button>
+        </div>
+      </article>
+
+      <article class="card" data-category="apps" data-item-id="svc-store">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Online Store</span>
+            <span class="price-badge">₹4,999</span>
+          </div>
+          <h3>E-Commerce / WhatsApp Store</h3>
+          <p>Interactive cart, product search, category filters &amp; 1-tap WhatsApp/UPI checkout.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="svc-store" data-cart-name="E-Commerce / WhatsApp Store" data-cart-price="4999" data-cart-desc="Interactive cart, product search, categories &amp; WhatsApp/UPI checkout">+ Add to Cart</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="svc-store" data-preset="store">Quick Order →</button>
+        </div>
+      </article>
+
+      <article class="card" data-category="apps" data-item-id="svc-webapp">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Auth &amp; DB</span>
+            <span class="price-badge">₹7,999</span>
+          </div>
+          <h3>Custom Web App (Auth &amp; DB)</h3>
+          <p>Email OTP login, saved accounts, order history, downloadable receipts &amp; custom tools.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="svc-webapp" data-cart-name="Custom Web App (Auth &amp; DB)" data-cart-price="7999" data-cart-desc="Email OTP login, saved accounts, order history, receipts &amp; custom tools">+ Add to Cart</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="svc-webapp" data-preset="webapp">Quick Order →</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 3. PLANS (BUNDLES) -->
+  <section id="plans" data-page="plans">
+    <h2>2. Or Choose a Bundle Plan</h2>
+    <p class="sub">Complete launch bundles designed for creators, shops, and startups. Add any plan to your Cart and see your total update instantly.</p>
+
+    <div class="grid" id="plansGrid">
+      <article class="card" data-item-id="plan-starter">
+        <div>
+          <div class="col-badge-row"><span class="col-tag">DIY Starter</span></div>
+          <div class="price">₹999</div>
+          <h3>Starter Code Pack</h3>
+          <p>Single-page template + complete editable HTML/CSS/JS source files + quick setup guide.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="plan-starter" data-cart-name="Starter Code Pack" data-cart-price="999" data-cart-desc="Single-page template + editable code files + setup guide">+ Add Plan</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="plan-starter" data-preset="codefile">Book Now →</button>
+        </div>
+      </article>
+
+      <article class="card" data-item-id="plan-business">
+        <div>
+          <div class="col-badge-row"><span class="col-tag">Best Value</span></div>
+          <div class="price">₹2,999</div>
+          <h3>Creator &amp; Business Launch</h3>
+          <p>Custom multi-section website + mobile polish + basic SEO setup + 2 free revisions.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="plan-business" data-cart-name="Creator &amp; Business Launch" data-cart-price="2999" data-cart-desc="Custom multi-section website + mobile polish + SEO + 2 revisions">+ Add Plan</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="plan-business" data-preset="business">Book Now →</button>
+        </div>
+      </article>
+
+      <article class="card" data-item-id="plan-store">
+        <div>
+          <div class="col-badge-row"><span class="col-tag">Sell Online</span></div>
+          <div class="price">₹5,499</div>
+          <h3>Smart Store Bundle</h3>
+          <p>Full product catalog + interactive cart + zero-typing order builder + WhatsApp/Insta/Email checkout.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="plan-store" data-cart-name="Smart Store Bundle" data-cart-price="5499" data-cart-desc="Full catalog + interactive cart + multi-channel checkout">+ Add Plan</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="plan-store" data-preset="store">Book Now →</button>
+        </div>
+      </article>
+
+      <article class="card" data-item-id="plan-pro">
+        <div>
+          <div class="col-badge-row"><span class="col-tag">All-In-One</span></div>
+          <div class="price">₹8,999</div>
+          <h3>Pro Agency Web App</h3>
+          <p>Full custom web app + Email OTP login + cloud sync + GitHub Pages hosting + priority support.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-cart-id="plan-pro" data-cart-name="Pro Agency Web App" data-cart-price="8999" data-cart-desc="Custom web app + OTP login + cloud sync + GitHub Pages hosting">+ Add Plan</button>
+          <button type="button" class="quick-wa-mini" data-quick-order="plan-pro" data-preset="webapp">Book Now →</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 4. ADD-ONS & FOUNDER -->
+  <section id="addons" data-page="addons">
+    <h2>Interactive Tech &amp; Hosting Add-Ons</h2>
+    <p class="sub">Tap any add-on below to toggle it directly into your Cart and Order total.</p>
+
+    <div class="grid" id="addonsGrid">
+      <article class="card" data-addon-card="addon-ghpages">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Deployment</span>
+            <span class="price-badge">₹500</span>
+          </div>
+          <h3>GitHub Pages Hosting Setup</h3>
+          <p>Complete GitHub repository setup, live deployment, favicon &amp; sitemap configuration with ₹0 monthly fees.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-addon-toggle="addon-ghpages">+ Add to Cart</button>
+          <span class="field-hint">Synced with Order Builder</span>
+        </div>
+      </article>
+
+      <article class="card" data-addon-card="addon-handover">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag free-tag">Included</span>
+            <span class="price-badge free">₹0</span>
+          </div>
+          <h3>Editable ZIP / HTML Code Handover</h3>
+          <p>Clean, well-commented source code files you own 100% — edit or host anywhere anytime.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-addon-toggle="addon-handover">+ Add Free</button>
+          <span class="field-hint">100% Ownership</span>
+        </div>
+      </article>
+
+      <article class="card" data-addon-card="addon-domain">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Brand Domain</span>
+            <span class="price-badge">+₹399</span>
+          </div>
+          <h3>Custom Domain Setup (.in / .com)</h3>
+          <p>Connect your custom domain with clean DNS records &amp; free HTTPS SSL certificate.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-addon-toggle="addon-domain">+ Add to Cart</button>
+          <span class="field-hint">SSL Secured</span>
+        </div>
+      </article>
+
+      <article class="card" data-addon-card="addon-checkout">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Conversion</span>
+            <span class="price-badge">+₹399</span>
+          </div>
+          <h3>WhatsApp &amp; Insta Auto-Checkout</h3>
+          <p>Pre-filled order messages wired to WhatsApp, Email, Gmail Web, and Instagram DM.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-addon-toggle="addon-checkout">+ Add to Cart</button>
+          <span class="field-hint">Zero-typing UX</span>
+        </div>
+      </article>
+
+      <article class="card" data-addon-card="addon-theme">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">UI Polish</span>
+            <span class="price-badge">+₹399</span>
+          </div>
+          <h3>Dark / Light Theme Toggle</h3>
+          <p>Instant theme switcher remembered automatically in the visitor's browser.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-addon-toggle="addon-theme">+ Add to Cart</button>
+          <span class="field-hint">Auto-saved</span>
+        </div>
+      </article>
+
+      <article class="card" data-addon-card="addon-seo">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Google Search</span>
+            <span class="price-badge">+₹499</span>
+          </div>
+          <h3>SEO, Sitemap &amp; Google Indexing</h3>
+          <p>Meta tags, WhatsApp/IG link previews, Schema.org JSON-LD, sitemap.xml &amp; robots.txt readiness.</p>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="cart-add-btn" data-addon-toggle="addon-seo">+ Add to Cart</button>
+          <span class="field-hint">Search Ready</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Founder Card -->
+    <article class="card founder-banner">
+      <div>
+        <div class="col-badge-row">
+          <span class="col-tag">Founder — App Box</span>
+          <span class="col-tag free-tag">Direct 1-on-1 Build</span>
+        </div>
+        <div class="founder-meta-row">
+          <div class="founder-avatar" aria-hidden="true">PG</div>
+          <div>
+            <h3 style="margin-bottom:2px;">Purushottam Giri</h3>
+            <div style="font-size:12.5px;color:var(--accent-sky);font-weight:600;">Founder &amp; Lead Developer &bull; App Box</div>
+          </div>
+        </div>
+        <p>Building fast, modern websites &amp; ready-to-launch code files for creators, startups, and local businesses. Work directly with the founder from concept to live launch.</p>
+      </div>
+      <div class="card-actions" style="flex-wrap:wrap;">
+        <a class="btn wa-btn sm" href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">WhatsApp Purushottam</a>
+        <a class="btn ig-btn sm" href="https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==" target="_blank" rel="noopener noreferrer">@purushottam_giri_2009 ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- 5. GROWTH ECOSYSTEM (PARADOVERSE) -->
+  <section id="growth" data-page="growth">
+    <h2>Transforming Ideas Into Impact</h2>
+    <p class="sub">Launching a website is step one — bringing real audience traffic and sales is step two. Here is our complete 2-step ecosystem.</p>
+
+    <div class="growth-grid">
+      <article class="card">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Step 1: Build</span>
+          </div>
+          <h3>Build Your Website or App Here on App Box</h3>
+          <p>Start with a high-converting digital foundation engineered for speed, mobile convenience, and zero lag:</p>
+          <div class="eco-steps">
+            <div class="eco-step">
+              <div class="eco-step-title">Fast Code &amp; Custom Design</div>
+              <p>Single-page sites, multi-section business websites, WhatsApp stores, or full web apps.</p>
+            </div>
+            <div class="eco-step">
+              <div class="eco-step-title">GitHub Pages Hosting (₹500)</div>
+              <p>Live deployment with free HTTPS and 100% editable source code ownership.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-actions">
+          <button type="button" class="btn sm" id="growthStartBuildBtn">Start Your Website Build →</button>
+        </div>
+      </article>
+
+      <article class="card partner-highlight">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">Step 2: Promote &amp; Grow</span>
+            <span class="col-tag free-tag">Official Partner</span>
+          </div>
+          <h3>Promote &amp; Grow with Paradoverse</h3>
+          <p>Once your website or store is live, partner with <strong>Paradoverse</strong> to drive real eyes, clicks, and sales to your link:</p>
+          <div class="eco-steps">
+            <div class="eco-step">
+              <div class="eco-step-title">Video Editing, Reels/Shorts &amp; VFX</div>
+              <p>High-retention vertical videos, cinematic edits, motion graphics, and promo trailers.</p>
+            </div>
+            <div class="eco-step">
+              <div class="eco-step-title">Paid Social Media Promotion</div>
+              <p>Targeted multi-page Instagram &amp; YouTube distribution to grow your brand fast.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card-actions" style="flex-direction:column;align-items:stretch;">
+          <a class="btn pv-btn" href="https://paradoverse.github.io/" target="_blank" rel="noopener noreferrer">Visit Paradoverse ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 6. FAQ -->
+  <section id="faq" data-page="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p class="sub">Everything you need to know about ordering, delivery speed, hosting, and growth.</p>
+
+    <details open>
+      <summary>How does the Zero-Typing Order Builder work?</summary>
+      <p>Add your website, web app, code files, or add-ons to the Cart, then tap your project specs inside the Order tab. Your entire message is compiled automatically with zero blanks — just tap WhatsApp, Email, Gmail, or Instagram and hit Send.</p>
+    </details>
+    <details>
+      <summary>How fast is delivery?</summary>
+      <p>Ready-to-Use Code Files are delivered within 24 hours. Custom Landing Pages and Business Websites typically take 24–72 hours depending on your pages and add-ons.</p>
+    </details>
+    <details>
+      <summary>What is included in GitHub Pages Hosting (₹500) &amp; Code Handover?</summary>
+      <p>For ₹500 one-time, we configure your GitHub repository, publish your website live with free HTTPS, and verify mobile speed (₹0 monthly hosting renewals). Editable ZIP/HTML Code Handover is always included free (₹0) so you own 100% of your code.</p>
+    </details>
+    <details>
+      <summary>How do App Box and Paradoverse work together?</summary>
+      <p>App Box builds and hosts your website, store, or web app. Once you are live, you can visit <a class="partner-inline-link" href="https://paradoverse.github.io/" target="_blank" rel="noopener noreferrer">Paradoverse ↗</a> for video editing, Reels/Shorts, VFX, and social media promotion to bring traffic directly to your new site.</p>
+    </details>
+  </section>
+
+  <!-- 7. ORDER (ZERO-TYPING SMART ORDER BUILDER) -->
+  <section id="contact" data-page="contact">
+    <h2>3. Build &amp; Send Your Order</h2>
+    <p class="sub">Tap your specs right here — zero retyping needed. Your ready-to-send order message updates live for WhatsApp, Email, Gmail, and Instagram.</p>
+
+    <div class="checkout-grid">
+      <div class="card">
+        <form id="bookingForm" novalidate>
+          <div class="ab-account-strip" id="checkoutAccountStrip">
+            <span id="checkoutAccountText">Guest checkout — Login with Email OTP to save &amp; sync orders</span>
+            <button type="button" class="ab-inline-login-btn" id="checkoutAccountActionBtn">Login</button>
+          </div>
+
+          <!-- 1-Tap Quick Presets -->
+          <div class="ab-preset-bar" role="group" aria-label="1-Tap Quick Presets">
+            <div class="ab-preset-title">1-Tap Quick Presets</div>
+            <button type="button" class="ab-chip" data-preset-btn="landing">Landing Page</button>
+            <button type="button" class="ab-chip" data-preset-btn="business">Business Site</button>
+            <button type="button" class="ab-chip" data-preset-btn="store">WhatsApp Store</button>
+            <button type="button" class="ab-chip" data-preset-btn="codefile">Ready Code Files</button>
+            <button type="button" class="ab-chip" data-preset-btn="webapp">Custom Web App</button>
+          </div>
+
+          <div class="ab-form-row-2">
+            <label>
+              Your Name / Brand
+              <input type="text" id="clientName" placeholder="e.g. Rohan / Studio XYZ" autocomplete="name">
+            </label>
+            <label>
+              Phone or IG Handle <span class="field-hint">(Optional)</span>
+              <input type="text" id="clientContact" placeholder="e.g. @rohan or +91 98..." autocomplete="tel">
+            </label>
+          </div>
+
+          <!-- Project Type -->
+          <div class="field-label">
+            <span>Project Type</span>
+            <div class="ab-chip-group" role="radiogroup" aria-label="Project Type">
+              <button type="button" class="ab-chip active" data-ptype="Website">Website</button>
+              <button type="button" class="ab-chip" data-ptype="Web App">Web App</button>
+              <button type="button" class="ab-chip" data-ptype="Code Files Only">Code Files Only</button>
+              <button type="button" class="ab-chip" data-ptype="Redesign">Redesign</button>
+            </div>
+          </div>
+
+          <!-- Page Count / Scope -->
+          <div class="field-label">
+            <span>Page Count / Scope</span>
+            <div class="ab-chip-group" role="radiogroup" aria-label="Page Count or Scope">
+              <button type="button" class="ab-chip active" data-scope="1 Page">1 Page</button>
+              <button type="button" class="ab-chip" data-scope="4–6 Pages">4–6 Pages</button>
+              <button type="button" class="ab-chip" data-scope="Full Store">Full Store</button>
+              <button type="button" class="ab-chip" data-scope="Custom">Custom</button>
+            </div>
+          </div>
+
+          <!-- Style & Extras (Multi-Select) -->
+          <div class="field-label">
+            <span>Style &amp; Extras <span class="field-hint">(Tap any that apply)</span></span>
+            <div class="ab-chip-group" role="group" aria-label="Style and Extras">
+              <button type="button" class="ab-chip active" data-style="Dark Modern UI">Dark Modern UI</button>
+              <button type="button" class="ab-chip active" data-style="Mobile-First">Mobile-First</button>
+              <button type="button" class="ab-chip" data-style="Cart &amp; Checkout">Cart &amp; Checkout</button>
+              <button type="button" class="ab-chip" data-style="Email OTP Login">Email OTP Login</button>
+              <button type="button" class="ab-chip" data-style="Contact Form">Contact Form</button>
+              <button type="button" class="ab-chip active" data-style="Fast Animations">Fast Animations</button>
+            </div>
+          </div>
+
+          <!-- Delivery Timeline -->
+          <div class="field-label">
+            <span>Delivery Timeline</span>
+            <div class="ab-priority-row" role="radiogroup" aria-label="Delivery Timeline">
+              <button type="button" class="ab-priority-btn active" data-priority="Standard (2–4 Days)">Standard (2–4 Days)</button>
+              <button type="button" class="ab-priority-btn" data-priority="Express Rush">Express Rush</button>
+              <button type="button" class="ab-priority-btn" data-priority="Flexible">Flexible</button>
+            </div>
+          </div>
+
+          <!-- Hosting Choice (Syncs directly with ₹500 GitHub Pages & Custom Domain Add-ons) -->
+          <div class="field-label">
+            <span>Hosting Choice <span class="field-hint">(Auto-syncs with Cart)</span></span>
+            <div class="ab-chip-group" role="radiogroup" aria-label="Hosting Choice">
+              <button type="button" class="ab-chip active" data-hosting="self">Self-Host / ZIP Only</button>
+              <button type="button" class="ab-chip" data-hosting="ghpages">GitHub Pages Setup (+₹500)</button>
+              <button type="button" class="ab-chip" data-hosting="domain">Custom Domain (+₹399)</button>
+            </div>
+          </div>
+
+          <label>
+            Optional Notes <span class="field-hint">(Leave blank if not needed)</span>
+            <textarea id="projectNotes" placeholder="Reference link, colors, business details, or custom requests..."></textarea>
+          </label>
+
+          <button type="button" class="btn ghost" id="openCartFromFormBtn">Edit Cart Items (<span id="formCartCount">1</span> &bull; <span id="formCartTotal">₹1,299</span>)</button>
+          <button type="submit" class="btn wa-btn">Send Ready Order on WhatsApp →</button>
+        </form>
+      </div>
+
+      <!-- Sticky Live Ready-to-Send Preview -->
+      <div class="card ab-preview-sticky">
+        <div>
+          <div class="col-badge-row">
+            <span class="col-tag">100% Ready Message</span>
+            <span class="price-badge" id="previewTotalBadge">₹1,299</span>
+          </div>
+          <h3>Tap &amp; Send Anywhere</h3>
+          <p>Zero blanks to edit — everything you tapped is compiled cleanly below:</p>
+
+          <div class="ab-preview-toolbar">
+            <span style="font-size:11.5px;color:var(--text-muted);" id="previewModeHint">Auto-synced live</span>
+            <div style="display:flex;gap:6px;">
+              <button type="button" class="ab-mini-link-btn" id="toggleEditMsgBtn">Edit Text</button>
+              <button type="button" class="ab-mini-link-btn" id="resetAutoMsgBtn" hidden>Reset Auto</button>
+            </div>
+          </div>
+
+          <pre class="msg-preview-box" id="liveMessagePreview"></pre>
+          <textarea class="msg-edit-textarea" id="customMessageEditor" hidden aria-label="Edit order message"></textarea>
+
+          <div class="stack">
+            <a class="btn wa-btn" id="directWaCardBtn" href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">Send on WhatsApp (+91 62000 67517)</a>
+            <div class="send-grid-2">
+              <a class="btn ghost sm" id="directEmailCardBtn" href="mailto:subhamgiri00007@gmail.com" target="_blank" rel="noopener noreferrer">Email App</a>
+              <a class="btn ghost sm" id="directGmailCardBtn" href="https://mail.google.com/mail/?view=cm&fs=1&to=subhamgiri00007@gmail.com" target="_blank" rel="noopener noreferrer">Gmail Web ↗</a>
+            </div>
+            <a class="btn ig-btn" id="directInstaCardBtn" href="https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==" target="_blank" rel="noopener noreferrer">Instagram (@purushottam_giri_2009 — Auto-Copy + Open)</a>
+            <div class="send-grid-2">
+              <button type="button" class="btn ghost sm" id="nativeShareBtn">Share to Any App</button>
+              <button type="button" class="btn ghost sm" id="copyBriefBtn">Copy Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Left Slide-Out Navigation Drawer -->
+<div class="ab-side-backdrop" id="abSideDrawerBackdrop" aria-hidden="true">
+  <aside class="ab-side-drawer" id="abSideDrawer" role="dialog" aria-modal="true" aria-label="Site Menu">
+    <div class="ab-side-head">
+      <div class="ab-side-brand">
+        <svg class="brand-logo-svg" style="width:28px;height:28px;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="abLogoG2" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0A84FF"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="60" height="60" rx="16" fill="#090C14" stroke="url(#abLogoG2)" stroke-width="2.8"/>
+          <path d="M32 11 L50 21.5 V42.5 L32 53 L14 42.5 V21.5 Z" fill="#0F213E" stroke="url(#abLogoG2)" stroke-width="2.4" stroke-linejoin="round"/>
+          <path d="M25 27.5 L20 32 L25 36.5 M39 27.5 L44 32 L39 36.5 M34 25.5 L30 38.5" stroke="#FFFFFF" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>APP BOX</span>
+      </div>
+      <button type="button" class="cart-close-btn" id="closeSideDrawerBtn" aria-label="Close menu">&times;</button>
+    </div>
+
+    <div class="ab-side-account-box">
+      <div class="ab-side-account-top">
+        <div class="ab-avatar-circle" id="abSideAvatar">G</div>
+        <div class="ab-side-account-meta">
+          <div class="ab-side-account-name" id="abSideAccountName">Guest Visitor</div>
+          <div class="ab-side-account-email" id="abSideAccountEmail">Sign in with Email OTP to sync</div>
+        </div>
+      </div>
+      <div class="ab-side-account-actions">
+        <button type="button" class="btn sm" id="abSideLoginBtn">Login / OTP</button>
+        <button type="button" class="btn ghost sm" id="abSideProfileBtn" hidden>Account</button>
+        <button type="button" class="btn ghost sm" id="abSideLogoutBtn" hidden>Sign Out</button>
+      </div>
+    </div>
+
+    <div class="ab-side-nav" role="navigation" aria-label="Drawer Navigation">
+      <div class="ab-side-section-label">Workspace</div>
+      <button type="button" class="ab-side-item" id="abDrawerCartBtn">
+        <span class="ab-side-item-left">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+          <span>My Cart</span>
+        </span>
+        <span class="ab-side-badge" id="abDrawerCartBadge">1 &bull; ₹1,299</span>
+      </button>
+      <button type="button" class="ab-side-item" id="abDrawerOrdersBtn">
+        <span class="ab-side-item-left">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+          <span>My Orders</span>
+        </span>
+        <span class="ab-side-badge green" id="abDrawerOrdersBadge">0</span>
+      </button>
+      <button type="button" class="ab-side-item" id="abDrawerAccountBtn">
+        <span class="ab-side-item-left">
+          <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+          <span>My Account</span>
+        </span>
+        <span class="ab-side-badge" id="abDrawerAccountBadge">Guest</span>
+      </button>
+
+      <div class="ab-side-section-label">Explore App Box</div>
+      <button type="button" class="ab-side-item active" data-drawer-nav="home"><span class="ab-side-item-left"><span>Home</span></span></button>
+      <button type="button" class="ab-side-item" data-drawer-nav="services"><span class="ab-side-item-left"><span>Services</span></span></button>
+      <button type="button" class="ab-side-item" data-drawer-nav="plans"><span class="ab-side-item-left"><span>Plans</span></span></button>
+      <button type="button" class="ab-side-item" data-drawer-nav="addons"><span class="ab-side-item-left"><span>Add-ons &amp; Founder</span></span></button>
+      <button type="button" class="ab-side-item" data-drawer-nav="growth"><span class="ab-side-item-left"><span>Growth Ecosystem</span></span></button>
+      <button type="button" class="ab-side-item" data-drawer-nav="faq"><span class="ab-side-item-left"><span>FAQ</span></span></button>
+      <button type="button" class="ab-side-item" data-drawer-nav="contact"><span class="ab-side-item-left"><span>Order Builder</span></span></button>
+
+      <div class="ab-side-section-label">Growth Partner</div>
+      <a class="ab-side-item partner-link" href="https://paradoverse.github.io/" target="_blank" rel="noopener noreferrer">
+        <span class="ab-side-item-left"><span>Paradoverse (Promo &amp; Editing)</span></span>
+        <span class="ab-side-badge green">↗</span>
+      </a>
+    </div>
+
+    <div class="ab-side-footer">
+      <a id="sideWaLink" href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      <a id="sideEmailLink" href="mailto:subhamgiri00007@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+      <a id="sideInstaLink" href="https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </aside>
+</div>
+
+<!-- My Orders Modal -->
+<div class="ab-modal-backdrop" id="abOrdersBackdrop" aria-hidden="true">
+  <div class="ab-modal-card" role="dialog" aria-modal="true" aria-label="My App Box Orders">
+    <div class="ab-modal-head">
+      <div>
+        <h3 style="margin-bottom:2px;">My Orders</h3>
+        <div id="abOrdersAccountLabel" style="font-size:12px;color:var(--text-secondary);">Orders placed from your account</div>
+      </div>
+      <button type="button" class="cart-close-btn" id="closeOrdersBtn" aria-label="Close Orders">&times;</button>
+    </div>
+    <div class="ab-modal-body" id="abOrdersList"></div>
+  </div>
+</div>
+
+<!-- My Account Modal -->
+<div class="ab-modal-backdrop" id="abAccountBackdrop" aria-hidden="true">
+  <div class="ab-modal-card" role="dialog" aria-modal="true" aria-label="My App Box Account">
+    <div class="ab-modal-head">
+      <div style="display:flex;align-items:center;gap:11px;min-width:0;">
+        <div class="ab-avatar-circle" id="abAccAvatar">U</div>
+        <div style="min-width:0;">
+          <h3 style="margin-bottom:2px;">My Account</h3>
+          <div id="abAccEmailDisplay" style="font-size:12px;color:var(--text-secondary);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">Not signed in</div>
+        </div>
+      </div>
+      <button type="button" class="cart-close-btn" id="closeAccountBtn" aria-label="Close Account">&times;</button>
+    </div>
+    <div class="ab-modal-body">
+      <div class="ab-account-strip signed-in">
+        <span id="abAccSyncStatus">Synced to your email account</span>
+      </div>
+
+      <div class="ab-stat-grid">
+        <div class="ab-stat-box">
+          <div class="ab-stat-label">Saved Cart Items</div>
+          <div class="ab-stat-val" id="abAccCartCount">0</div>
+        </div>
+        <div class="ab-stat-box">
+          <div class="ab-stat-label">Past Orders</div>
+          <div class="ab-stat-val" id="abAccOrdersCount">0</div>
+        </div>
+      </div>
+
+      <label>
+        Display Name / Brand (Auto-fills Order Builder)
+        <input type="text" id="abAccNameInput" placeholder="e.g. Rohan / Studio XYZ">
+      </label>
+
+      <label>
+        Phone or IG Handle (Optional)
+        <input type="text" id="abAccPhoneInput" placeholder="e.g. +91 98765 43210 or @handle">
+      </label>
+
+      <button type="button" class="btn" id="abAccSaveBtn">Save Account Profile</button>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <button type="button" class="btn ghost sm" id="abAccOpenCartBtn">Open My Cart</button>
+        <button type="button" class="btn ghost sm" id="abAccOpenOrdersBtn">View My Orders</button>
+      </div>
+
+      <button type="button" class="cart-remove-btn" id="abAccSignOutBtn" style="margin-top:4px;text-align:center;">Sign Out of This Account</button>
+    </div>
+  </div>
+</div>
+
+<!-- Right Slide-Out Cart Drawer -->
+<div class="cart-backdrop" id="cartBackdrop" aria-hidden="true">
+  <div class="cart-drawer" role="dialog" aria-modal="true" aria-label="Your App Box Order Cart">
+    <div class="cart-header">
+      <div>
+        <h3 style="margin-bottom:2px;">Your Order Cart</h3>
+        <div id="cartDrawerAccountSub" style="font-size:12px;color:var(--text-secondary);">Guest Cart &bull; Login to sync to your account</div>
+      </div>
+      <button type="button" class="cart-close-btn" id="closeCartBtn" aria-label="Close Cart">&times;</button>
+    </div>
+
+    <div class="cart-items-list" id="cartItemsList"></div>
+
+    <div class="cart-footer">
+      <input type="text" id="drawerClientName" class="cart-quick-name" placeholder="Your Name / Brand (auto-added to message)" aria-label="Your Name or Brand">
+      <div class="cart-total-row">
+        <span>Estimated Total</span>
+        <span class="cart-total-amount" id="drawerCartTotal">₹1,299</span>
+      </div>
+      <div class="stack" style="margin-top:0;">
+        <a class="btn wa-btn" id="drawerWaBtn" href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">Send Ready Order on WhatsApp</a>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <a class="btn ghost sm" id="drawerEmailBtn" href="mailto:subhamgiri00007@gmail.com" target="_blank" rel="noopener noreferrer">Email App</a>
+          <a class="btn ghost sm" id="drawerInstaBtn" href="https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==" target="_blank" rel="noopener noreferrer">Instagram DM</a>
+        </div>
+        <button type="button" class="btn ghost sm" id="drawerGoCheckoutBtn">Customize Specs &amp; Add-ons →</button>
+        <button type="button" class="cart-remove-btn" id="clearCartBtn" style="margin-top:2px;">Clear All Items</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Floating Bottom Convenience Dock -->
+<div class="convenience-dock" role="region" aria-label="Quick Cart and Booking Bar">
+  <div class="dock-info">
+    <button type="button" class="cart-trigger-btn sm" id="dockCartBtn" style="min-height:34px;padding:4px 11px;font-size:12.2px;">
+      <svg class="ic-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"></circle><circle cx="19" cy="21" r="1"></circle><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path></svg>
+      <span><span id="dockCartCount">1</span> &bull; <span id="dockCartTotal">₹1,299</span></span>
+    </button>
+    <div class="dock-text" id="dockStatusText"><strong>1 item</strong> in Cart (₹1,299)</div>
+  </div>
+  <div class="dock-actions">
+    <a class="btn ghost sm" id="dockInstantEmailBtn" href="mailto:subhamgiri00007@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+    <a class="btn ghost sm" id="dockInstantInstaBtn" href="https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a class="btn wa-btn sm" id="dockInstantWaBtn" href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">WhatsApp →</a>
+  </div>
+</div>
+
+<!-- Back to Top Button -->
+<button type="button" class="ab-back-top" id="abBackToTopBtn" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+<!-- Toast Notification -->
+<div class="toast" id="toastBanner" role="status" aria-live="polite">Ready</div>
+
+<!-- Footer -->
+<footer>
+  <div class="wrap">
+    <div class="footer-nav" aria-label="Footer Navigation">
+      <button type="button" data-footer-nav="home">Home</button>
+      <button type="button" data-footer-nav="services">Services</button>
+      <button type="button" data-footer-nav="plans">Plans</button>
+      <button type="button" data-footer-nav="addons">Add-ons</button>
+      <button type="button" data-footer-nav="growth">Growth</button>
+      <button type="button" data-footer-nav="faq">FAQ</button>
+      <button type="button" data-footer-nav="contact">Order</button>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==" target="_blank" rel="noopener noreferrer">@purushottam_giri_2009</a>
+      <a href="mailto:subhamgiri00007@gmail.com">subhamgiri00007@gmail.com</a>
+      <a href="https://wa.me/916200067517" target="_blank" rel="noopener noreferrer">WhatsApp +91 62000 67517</a>
+      <a href="https://paradoverse.github.io/" target="_blank" rel="noopener noreferrer">Paradoverse (Promotion &amp; Video Editing) ↗</a>
+    </div>
+    <div>&copy; 2026 App Box | Transforming Ideas Into Impact. Founded by Purushottam Giri. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- Full-Screen Optional Appwrite Live Email OTP Modal -->
+<div id="abGateOverlay" class="ab-gate-overlay ab-hidden" role="dialog" aria-modal="true" aria-labelledby="abGateTitle">
+  <div class="ab-gate-card">
+    <button id="abCloseModalBtn" class="ab-close-x" type="button" aria-label="Skip and close">&times;</button>
+    <div class="ab-gate-head">
+      <div id="abShieldWrap" class="ab-shield-wrap" aria-hidden="true">
+        <svg class="brand-logo-svg" style="width:34px;height:34px;" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="abLogoG3" x1="6" y1="6" x2="58" y2="58" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#0A84FF"/>
+              <stop offset="100%" stop-color="#38BDF8"/>
+            </linearGradient>
+          </defs>
+          <path d="M32 10 L52 21.5 V42.5 L32 54 L12 42.5 V21.5 Z" fill="#0F213E" stroke="url(#abLogoG3)" stroke-width="2.6" stroke-linejoin="round"/>
+          <path d="M25 27.5 L20 32 L25 36.5 M39 27.5 L44 32 L39 36.5 M34 25.5 L30 38.5" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="ab-gate-pill">
+        <span class="ab-gate-dot"></span>
+        <span>APP BOX</span>
+      </div>
+      <h2 id="abGateTitle">Welcome to App Box</h2>
+      <p id="abGateSubtitle">Sign in quickly with a free 6-digit Email OTP to sync your cart &amp; orders, or skip straight to the website.</p>
+      <div class="ab-steps-dots" aria-hidden="true">
+        <span id="abDot1" class="ab-step-dot active"></span>
+        <span id="abDot2" class="ab-step-dot"></span>
+      </div>
+    </div>
+
+    <!-- Step 1: Enter Email -->
+    <div id="abStepRequest">
+      <div class="ab-gate-group">
+        <label class="ab-gate-label" for="abEmailInput">Email Address</label>
+        <div class="ab-input-wrap">
+          <input id="abEmailInput" class="ab-gate-input" type="email" autocomplete="email" placeholder="you@example.com">
+          <svg class="ab-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="3"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+        </div>
+      </div>
+
+      <div id="abStatusRequest" class="ab-gate-msg"></div>
+
+      <button id="abSendOtpBtn" class="ab-gate-btn" type="button">Send 6-Digit Email OTP</button>
+      <button id="abSkipBtn" class="ab-skip-btn" type="button">Skip &amp; Browse Website →</button>
+    </div>
+
+    <!-- Step 2: Enter 6-Digit OTP -->
+    <div id="abStepVerify" class="ab-step-hidden">
+      <div class="ab-target-chip">
+        <span id="abTargetDisplay" class="ab-target-text">you@example.com</span>
+        <button id="abChangeTargetBtn" class="ab-edit-pill" type="button">Edit</button>
+      </div>
+
+      <div class="ab-gate-group">
+        <label class="ab-gate-label" for="abOtp0">Enter 6-Digit Security Code</label>
+        <div id="abOtpBoxesWrap" class="ab-otp-boxes">
+          <input id="abOtp0" class="ab-otp-digit" type="text" inputmode="numeric" maxlength="1" autocomplete="one-time-code" aria-label="OTP digit 1">
+          <input id="abOtp1" class="ab-otp-digit" type="text" inputmode="numeric" maxlength="1" aria-label="OTP digit 2">
+          <input id="abOtp2" class="ab-otp-digit" type="text" inputmode="numeric" maxlength="1" aria-label="OTP digit 3">
+          <input id="abOtp3" class="ab-otp-digit" type="text" inputmode="numeric" maxlength="1" aria-label="OTP digit 4">
+          <input id="abOtp4" class="ab-otp-digit" type="text" inputmode="numeric" maxlength="1" aria-label="OTP digit 5">
+          <input id="abOtp5" class="ab-otp-digit" type="text" inputmode="numeric" maxlength="1" aria-label="OTP digit 6">
+        </div>
+      </div>
+
+      <div id="abStatusVerify" class="ab-gate-msg"></div>
+
+      <button id="abVerifyOtpBtn" class="ab-gate-btn" type="button">Verify &amp; Continue</button>
+      <button id="abSkipVerifyBtn" class="ab-skip-btn" type="button">Skip &amp; Browse Website →</button>
+
+      <div class="ab-gate-meta">
+        <span style="color:var(--text-muted);">Didn't get the email?</span>
+        <button id="abResendOtpBtn" class="ab-link-btn" type="button" disabled>Resend in 60s</button>
+      </div>
+    </div>
+
+    <div class="ab-gate-footer">
+      <span>Secured by Appwrite Auth</span>
+      <span id="abModeBadge" class="ab-mode-badge">Live Email OTP</span>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     MAIN APP LOGIC (Tab Mode Default + Zero-Lag Cart & Builder)
+     ========================================================= -->
+<script>
+(function () {
+  "use strict";
+
+  /* Brand & Contact Constants */
+  var WA_NUMBER = "916200067517";
+  var EMAIL_ADDR = "subhamgiri00007@gmail.com";
+  var IG_HANDLE = "@purushottam_giri_2009";
+  var IG_URL = "https://www.instagram.com/purushottam_giri_2009?jplx=MWlyM2hneGlvZ3Zlag==";
+  var GUEST_STORAGE_KEY = "ab_guest_state_v6";
+  var USER_STORAGE_PREFIX = "ab_user_account_v6_";
+
+  /* Services & Bundle Plans Catalog */
+  var CATALOG = {
+    "svc-code": { id: "svc-code", name: "Ready-to-Use Code Files", price: 599, desc: "Clean HTML/CSS/JS starter files ready to edit & host" },
+    "svc-redesign": { id: "svc-redesign", name: "Website Redesign & Bug Fix", price: 999, desc: "Speed optimization, mobile fixes & modern dark UI refresh" },
+    "svc-landing": { id: "svc-landing", name: "Single-Page / Landing Page", price: 1299, desc: "Responsive landing page with WhatsApp order flow" },
+    "svc-business": { id: "svc-business", name: "Business Website (4–6 Pages)", price: 2999, desc: "Multi-section business site with services, FAQ, forms & SEO" },
+    "svc-store": { id: "svc-store", name: "E-Commerce / WhatsApp Store", price: 4999, desc: "Interactive cart, product search, categories & WhatsApp/UPI checkout" },
+    "svc-webapp": { id: "svc-webapp", name: "Custom Web App (Auth & DB)", price: 7999, desc: "Email OTP login, saved accounts, order history, receipts & custom tools" },
+    "plan-starter": { id: "plan-starter", name: "Starter Code Pack", price: 999, desc: "Single-page template + editable code files + setup guide" },
+    "plan-business": { id: "plan-business", name: "Creator & Business Launch", price: 2999, desc: "Custom multi-section website + mobile polish + SEO + 2 revisions" },
+    "plan-store": { id: "plan-store", name: "Smart Store Bundle", price: 5499, desc: "Full catalog + interactive cart + multi-channel checkout" },
+    "plan-pro": { id: "plan-pro", name: "Pro Agency Web App", price: 8999, desc: "Custom web app + OTP login + cloud sync + GitHub Pages hosting" }
+  };
+
+  /* Interactive Tech & Hosting Add-ons Catalog */
+  var ADDONS_CATALOG = {
+    "addon-ghpages": { id: "addon-ghpages", name: "GitHub Pages Hosting Setup", price: 500, desc: "GitHub repo, live deployment, favicon & sitemap" },
+    "addon-handover": { id: "addon-handover", name: "Editable ZIP / HTML Code Handover", price: 0, desc: "Clean HTML/CSS/JS files you own 100%" },
+    "addon-domain": { id: "addon-domain", name: "Custom Domain Setup (.in / .com)", price: 399, desc: "Connect domain with DNS & free HTTPS SSL" },
+    "addon-checkout": { id: "addon-checkout", name: "WhatsApp & Insta Auto-Checkout", price: 399, desc: "Pre-filled order messages across channels" },
+    "addon-theme": { id: "addon-theme", name: "Dark / Light Theme Toggle", price: 399, desc: "Instant theme switcher remembered in browser" },
+    "addon-seo": { id: "addon-seo", name: "SEO, Sitemap & Google Indexing", price: 499, desc: "Meta tags, Open Graph, JSON-LD & sitemap.xml" }
+  };
+
+  var HOSTING_LABELS = {
+    "self": "Self-Host / ZIP Only",
+    "ghpages": "GitHub Pages Setup (+₹500)",
+    "domain": "Custom Domain (+₹399)"
+  };
+
+  /* 1-Tap Order Presets */
+  var PRESETS = {
+    landing: {
+      label: "Landing Page",
+      projectType: "Website",
+      scope: "1 Page",
+      styles: ["Dark Modern UI", "Mobile-First", "Fast Animations"],
+      priority: "Standard (2–4 Days)",
+      hostingChoice: "self",
+      defaultService: "svc-landing"
+    },
+    business: {
+      label: "Business Site",
+      projectType: "Website",
+      scope: "4–6 Pages",
+      styles: ["Dark Modern UI", "Mobile-First", "Contact Form", "Fast Animations"],
+      priority: "Standard (2–4 Days)",
+      hostingChoice: "ghpages",
+      defaultService: "svc-business"
+    },
+    store: {
+      label: "WhatsApp Store",
+      projectType: "Web App",
+      scope: "Full Store",
+      styles: ["Dark Modern UI", "Mobile-First", "Cart & Checkout", "Fast Animations"],
+      priority: "Standard (2–4 Days)",
+      hostingChoice: "ghpages",
+      defaultService: "svc-store"
+    },
+    codefile: {
+      label: "Ready Code Files",
+      projectType: "Code Files Only",
+      scope: "1 Page",
+      styles: ["Dark Modern UI", "Mobile-First"],
+      priority: "Standard (2–4 Days)",
+      hostingChoice: "self",
+      defaultService: "svc-code"
+    },
+    webapp: {
+      label: "Custom Web App",
+      projectType: "Web App",
+      scope: "Custom",
+      styles: ["Dark Modern UI", "Mobile-First", "Cart & Checkout", "Email OTP Login"],
+      priority: "Express Rush",
+      hostingChoice: "ghpages",
+      defaultService: "svc-webapp"
+    }
+  };
+
+  function cloneDefaultCart() {
+    var base = CATALOG["svc-landing"];
+    return [{ id: base.id, name: base.name, price: base.price, desc: base.desc, qty: 1 }];
+  }
+
+  function normalizeEmail(email) {
+    return String(email || "").trim().toLowerCase();
+  }
+
+  function safeGetStorage(key) {
+    try {
+      var raw = localStorage.getItem(key);
+      return raw ? JSON.parse(raw) : null;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function safeSetStorage(key, obj) {
+    try {
+      localStorage.setItem(key, JSON.stringify(obj));
+    } catch (_) {}
+  }
+
+  /* Core Reactive State (Tab Mode Enabled By Default) */
+  var state = {
+    activeSection: "home",
+    singleTabMode: true,
+    user: null,
+    activePreset: "",
+    projectType: "Website",
+    scope: "1 Page",
+    selectedStyles: ["Dark Modern UI", "Mobile-First", "Fast Animations"],
+    deliveryPriority: "Standard (2–4 Days)",
+    hostingChoice: "self",
+    selectedAddons: [],
+    customMessageOverride: "",
+    isEditingMessage: false,
+    activeFilter: "all",
+    searchQuery: "",
+    cart: cloneDefaultCart(),
+    orders: [],
+    guestCartTouched: false,
+    syncStatus: "Guest mode"
+  };
+
+  /* Cached DOM Nodes */
+  var mainContainer = document.getElementById("mainContainer");
+  var mainNav = document.getElementById("mainNav");
+  var liquidPill = document.getElementById("liquidPill");
+  var navTabs = Array.prototype.slice.call(document.querySelectorAll(".nav-tab"));
+  var footerNavBtns = Array.prototype.slice.call(document.querySelectorAll("[data-footer-nav]"));
+  var drawerNavBtns = Array.prototype.slice.call(document.querySelectorAll("[data-drawer-nav]"));
+  var sections = Array.prototype.slice.call(document.querySelectorAll("main.wrap > section[data-page]"));
+
+  var clientName = document.getElementById("clientName");
+  var drawerClientName = document.getElementById("drawerClientName");
+  var clientContact = document.getElementById("clientContact");
+  var projectNotes = document.getElementById("projectNotes");
+  var liveMessagePreview = document.getElementById("liveMessagePreview");
+  var customMessageEditor = document.getElementById("customMessageEditor");
+  var toggleEditMsgBtn = document.getElementById("toggleEditMsgBtn");
+  var resetAutoMsgBtn = document.getElementById("resetAutoMsgBtn");
+  var previewModeHint = document.getElementById("previewModeHint");
+
+  var cartBackdrop = document.getElementById("cartBackdrop");
+  var cartItemsList = document.getElementById("cartItemsList");
+  var sideDrawerBackdrop = document.getElementById("abSideDrawerBackdrop");
+  var ordersBackdrop = document.getElementById("abOrdersBackdrop");
+  var accountBackdrop = document.getElementById("abAccountBackdrop");
+  var toastBanner = document.getElementById("toastBanner");
+
+  var toastTimer = null;
+  var cloudSyncTimer = null;
+  var saveInputTimer = null;
+  var initialized = false;
+
+  function showToast(msg) {
+    if (!toastBanner) return;
+    toastBanner.textContent = msg;
+    toastBanner.classList.add("show");
+    if (toastTimer) clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () {
+      toastBanner.classList.remove("show");
+    }, 2400);
+  }
+
+  function formatINR(num) {
+    return "₹" + Number(num || 0).toLocaleString("en-IN");
+  }
+
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function getCartStats() {
+    var count = 0;
+    var total = 0;
+    for (var i = 0; i < state.cart.length; i++) {
+      count += state.cart[i].qty;
+      total += state.cart[i].price * state.cart[i].qty;
+    }
+    var addonTotal = 0;
+    for (var j = 0; j < state.selectedAddons.length; j++) {
+      var addon = ADDONS_CATALOG[state.selectedAddons[j]];
+      if (addon) addonTotal += addon.price;
+    }
+    return {
+      serviceCount: count,
+      count: count + state.selectedAddons.length,
+      total: total + addonTotal
+    };
+  }
+
+  function findCartItem(id) {
+    for (var i = 0; i < state.cart.length; i++) {
+      if (state.cart[i].id === id) return i;
+    }
+    return -1;
+  }
+
+  function hasAddon(id) {
+    return state.selectedAddons.indexOf(id) !== -1;
+  }
+
+  function addAddonSilent(id) {
+    if (ADDONS_CATALOG[id] && !hasAddon(id)) state.selectedAddons.push(id);
+  }
+
+  function removeAddonSilent(id) {
+    var idx = state.selectedAddons.indexOf(id);
+    if (idx !== -1) state.selectedAddons.splice(idx, 1);
+  }
+
+  function syncHostingChoiceFromAddons() {
+    if (hasAddon("addon-domain")) state.hostingChoice = "domain";
+    else if (hasAddon("addon-ghpages")) state.hostingChoice = "ghpages";
+    else state.hostingChoice = "self";
+  }
+
+  function applyHostingChoice(choiceKey) {
+    state.hostingChoice = HOSTING_LABELS[choiceKey] ? choiceKey : "self";
+    if (!state.user) state.guestCartTouched = true;
+    if (state.hostingChoice === "ghpages") {
+      addAddonSilent("addon-ghpages");
+      removeAddonSilent("addon-domain");
+    } else if (state.hostingChoice === "domain") {
+      addAddonSilent("addon-domain");
+      removeAddonSilent("addon-ghpages");
+    } else {
+      removeAddonSilent("addon-ghpages");
+      removeAddonSilent("addon-domain");
+    }
+    state.customMessageOverride = "";
+    applyBuilderChipsUI();
+    applyAddonsUI();
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+  }
+
+  /* Reliable Clipboard Copy using document.execCommand('copy') for iframe & mobile compatibility */
+  function copyText(text, successMsg) {
+    var copied = false;
+    try {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.top = "-9999px";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, text.length);
+      copied = document.execCommand("copy");
+      document.body.removeChild(ta);
+    } catch (_) {
+      copied = false;
+    }
+    if (copied) {
+      showToast(successMsg);
+      return;
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast(successMsg);
+      }).catch(function () {
+        showToast(successMsg);
+      });
+    } else {
+      showToast(successMsg);
+    }
+  }
+
+  /* Local & Appwrite Cloud Persistence (isolated under ab_account_json) */
+  function buildAccountSnapshot() {
+    return {
+      email: state.user ? state.user.email : "",
+      displayName: clientName ? clientName.value.trim() : (state.user ? state.user.displayName : ""),
+      phone: clientContact ? clientContact.value.trim() : (state.user ? state.user.phone : ""),
+      notes: projectNotes ? projectNotes.value : "",
+      projectType: state.projectType,
+      scope: state.scope,
+      selectedStyles: state.selectedStyles.slice(0, 12),
+      deliveryPriority: state.deliveryPriority,
+      hostingChoice: state.hostingChoice,
+      selectedAddons: state.selectedAddons.slice(0, 12),
+      cart: state.cart.slice(0, 30),
+      orders: state.orders.slice(0, 20),
+      updatedAt: new Date().toISOString()
+    };
+  }
+
+  function updateAccountSyncUI() {
+    var syncEl = document.getElementById("abAccSyncStatus");
+    if (syncEl) syncEl.textContent = state.syncStatus;
+  }
+
+  function persistCurrentState(syncToCloud) {
+    var snapshot = buildAccountSnapshot();
+    if (state.user && state.user.email) {
+      safeSetStorage(USER_STORAGE_PREFIX + normalizeEmail(state.user.email), snapshot);
+      if (syncToCloud !== false && window.ABAuth && typeof window.ABAuth.savePrefs === "function") {
+        state.syncStatus = "Saving to account...";
+        updateAccountSyncUI();
+        if (cloudSyncTimer) clearTimeout(cloudSyncTimer);
+        cloudSyncTimer = setTimeout(function () {
+          window.ABAuth.savePrefs(snapshot).then(function (ok) {
+            state.syncStatus = ok ? "Synced to your email account" : "Saved locally for " + state.user.email;
+            updateAccountSyncUI();
+          });
+        }, 700);
+      }
+    } else {
+      safeSetStorage(GUEST_STORAGE_KEY, snapshot);
+    }
+  }
+
+  function applySnapshotToState(data, fallbackName) {
+    if (!data) return;
+    if (Array.isArray(data.cart)) {
+      state.cart = data.cart.filter(function (it) { return it && it.id && typeof it.price === "number" && it.qty > 0; });
+    }
+    if (data.projectType) state.projectType = data.projectType;
+    if (data.scope) state.scope = data.scope;
+    if (Array.isArray(data.selectedStyles)) state.selectedStyles = data.selectedStyles;
+    if (data.deliveryPriority) state.deliveryPriority = data.deliveryPriority;
+    state.selectedAddons = Array.isArray(data.selectedAddons)
+      ? data.selectedAddons.filter(function (id) { return Boolean(ADDONS_CATALOG[id]); })
+      : [];
+    if (data.hostingChoice && HOSTING_LABELS[data.hostingChoice]) {
+      state.hostingChoice = data.hostingChoice;
+    } else {
+      syncHostingChoiceFromAddons();
+    }
+    state.orders = Array.isArray(data.orders) ? data.orders : [];
+
+    var nameToSet = data.displayName || fallbackName || "";
+    if (clientName) clientName.value = nameToSet;
+    if (drawerClientName) drawerClientName.value = nameToSet;
+    if (clientContact) clientContact.value = data.phone || "";
+    if (projectNotes) projectNotes.value = typeof data.notes === "string" ? data.notes : "";
+  }
+
+  function loadAccountForUser(userObj, remotePrefs) {
+    var email = normalizeEmail(userObj && userObj.email);
+    if (!email) return;
+
+    var localData = safeGetStorage(USER_STORAGE_PREFIX + email);
+    var remoteData = null;
+    if (remotePrefs && remotePrefs.ab_account_json) {
+      try { remoteData = JSON.parse(remotePrefs.ab_account_json); } catch (_) {}
+    }
+
+    var chosen = null;
+    if (localData && remoteData) {
+      var lt = Date.parse(localData.updatedAt || "") || 0;
+      var rt = Date.parse(remoteData.updatedAt || "") || 0;
+      chosen = rt >= lt ? remoteData : localData;
+    } else {
+      chosen = remoteData || localData;
+    }
+
+    var carryGuestCart = (!chosen || !Array.isArray(chosen.cart)) && state.guestCartTouched;
+    var defaultName = (userObj.name && userObj.name.trim()) ? userObj.name.trim() : email.split("@")[0];
+
+    state.user = {
+      email: email,
+      userId: userObj.$id || "",
+      displayName: (chosen && chosen.displayName) ? chosen.displayName : defaultName,
+      phone: (chosen && chosen.phone) ? chosen.phone : ""
+    };
+
+    if (chosen) {
+      applySnapshotToState(chosen, defaultName);
+    } else if (!carryGuestCart) {
+      state.cart = cloneDefaultCart();
+      state.selectedAddons = [];
+      state.hostingChoice = "self";
+      if (clientName) clientName.value = defaultName;
+      if (drawerClientName) drawerClientName.value = defaultName;
+    }
+
+    state.syncStatus = remoteData ? "Synced to your email account" : "Linked to " + email;
+    applyBuilderChipsUI();
+    applyAddonsUI();
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    renderOrdersUI();
+    persistCurrentState(true);
+  }
+
+  function resetToGuestSession() {
+    state.user = null;
+    state.guestCartTouched = false;
+    var guestData = safeGetStorage(GUEST_STORAGE_KEY);
+    if (guestData) {
+      applySnapshotToState(guestData, "");
+    } else {
+      state.cart = cloneDefaultCart();
+      state.selectedAddons = [];
+      state.hostingChoice = "self";
+      state.orders = [];
+      if (clientName) clientName.value = "";
+      if (drawerClientName) drawerClientName.value = "";
+      if (clientContact) clientContact.value = "";
+      if (projectNotes) projectNotes.value = "";
+    }
+    state.syncStatus = "Guest mode";
+    applyBuilderChipsUI();
+    applyAddonsUI();
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    renderOrdersUI();
+  }
+
+  /* Chip & Add-on Visual Sync */
+  function applyBuilderChipsUI() {
+    document.querySelectorAll("[data-preset-btn]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-preset-btn") === state.activePreset);
+    });
+    document.querySelectorAll("[data-ptype]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-ptype") === state.projectType);
+    });
+    document.querySelectorAll("[data-scope]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-scope") === state.scope);
+    });
+    document.querySelectorAll("[data-style]").forEach(function (btn) {
+      var st = btn.getAttribute("data-style");
+      btn.classList.toggle("active", state.selectedStyles.indexOf(st) !== -1);
+    });
+    document.querySelectorAll("[data-priority]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-priority") === state.deliveryPriority);
+    });
+    document.querySelectorAll("[data-hosting]").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-hosting") === state.hostingChoice);
+    });
+  }
+
+  function applyAddonsUI() {
+    document.querySelectorAll("[data-addon-card]").forEach(function (card) {
+      var addonId = card.getAttribute("data-addon-card");
+      var picked = hasAddon(addonId);
+      card.classList.toggle("in-cart", picked);
+      var btn = card.querySelector("[data-addon-toggle]");
+      if (btn) {
+        btn.classList.toggle("added", picked);
+        btn.textContent = picked ? "Added ✓" : (addonId === "addon-handover" ? "+ Add Free" : "+ Add to Cart");
+      }
+    });
+  }
+
+  /* Cart Operations */
+  function ensureInCart(id) {
+    if (!id || !CATALOG[id]) return;
+    if (findCartItem(id) === -1) {
+      var item = CATALOG[id];
+      if (!state.user) state.guestCartTouched = true;
+      state.cart.push({ id: item.id, name: item.name, price: item.price, desc: item.desc, qty: 1 });
+    }
+  }
+
+  function toggleCartItem(id, name, price, desc) {
+    var idx = findCartItem(id);
+    if (!state.user) state.guestCartTouched = true;
+    if (idx === -1) {
+      state.cart.push({ id: id, name: name, price: price, desc: desc, qty: 1 });
+      showToast("Added " + name + " (" + formatINR(price) + ")");
+    } else {
+      state.cart.splice(idx, 1);
+      showToast("Removed " + name);
+    }
+    state.customMessageOverride = "";
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+  }
+
+  function updateCartQty(id, delta) {
+    var idx = findCartItem(id);
+    if (idx === -1) return;
+    if (!state.user) state.guestCartTouched = true;
+    state.cart[idx].qty += delta;
+    if (state.cart[idx].qty <= 0) {
+      var removedName = state.cart[idx].name;
+      state.cart.splice(idx, 1);
+      showToast("Removed " + removedName);
+    }
+    state.customMessageOverride = "";
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+  }
+
+  function toggleAddon(addonId) {
+    var addon = ADDONS_CATALOG[addonId];
+    if (!addon) return;
+    if (!state.user) state.guestCartTouched = true;
+    if (hasAddon(addonId)) {
+      removeAddonSilent(addonId);
+      showToast("Removed " + addon.name);
+    } else {
+      addAddonSilent(addonId);
+      showToast("Added " + addon.name + (addon.price > 0 ? " (+" + formatINR(addon.price) + ")" : " (Free)"));
+    }
+    if (addonId === "addon-ghpages" || addonId === "addon-domain") {
+      syncHostingChoiceFromAddons();
+      applyBuilderChipsUI();
+    }
+    state.customMessageOverride = "";
+    applyAddonsUI();
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+  }
+
+  /* Live Zero-Typing Order Message Compiler */
+  function buildAutoBriefText() {
+    var nameVal = (clientName && clientName.value.trim())
+      ? clientName.value.trim()
+      : (state.user && state.user.displayName ? state.user.displayName : "");
+    var contactVal = (clientContact && clientContact.value.trim())
+      ? clientContact.value.trim()
+      : (state.user && state.user.phone ? state.user.phone : "");
+    var notesVal = (projectNotes && projectNotes.value.trim()) ? projectNotes.value.trim() : "";
+    var stats = getCartStats();
+
+    var lines = [
+      "Hi Purushottam (App Box),",
+      "I'd like to start a project with the details below:",
+      ""
+    ];
+
+    if (nameVal) lines.push("Name / Brand: " + nameVal);
+    if (contactVal) lines.push("Contact / Handle: " + contactVal);
+    if (state.user && state.user.email) lines.push("Account Email: " + state.user.email);
+
+    if (state.cart.length > 0) {
+      lines.push("Selected Builds (" + stats.serviceCount + " item" + (stats.serviceCount > 1 ? "s" : "") + "):");
+      for (var i = 0; i < state.cart.length; i++) {
+        var item = state.cart[i];
+        lines.push("  " + (i + 1) + ". " + item.name + " x " + item.qty + " — " + formatINR(item.price * item.qty));
+      }
+    } else {
+      lines.push("Selected Builds: Custom Website / Code Quote");
+    }
+
+    if (state.selectedAddons.length > 0) {
+      var addonNames = state.selectedAddons.map(function (id) {
+        var a = ADDONS_CATALOG[id];
+        return a ? (a.name + (a.price > 0 ? " (+" + formatINR(a.price) + ")" : " (Free)")) : "";
+      }).filter(Boolean);
+      if (addonNames.length > 0) lines.push("Add-ons: " + addonNames.join(", "));
+    }
+
+    if (state.cart.length > 0 || stats.total > 0) {
+      lines.push("Estimated Total: " + formatINR(stats.total));
+    }
+
+    lines.push("Project Type & Scope: " + state.projectType + " | " + state.scope);
+    if (state.selectedStyles.length > 0) lines.push("Style & Extras: " + state.selectedStyles.join(", "));
+    lines.push("Delivery Timeline: " + state.deliveryPriority);
+    lines.push("Hosting Choice: " + (HOSTING_LABELS[state.hostingChoice] || HOSTING_LABELS.self));
+    if (notesVal) lines.push("Notes: " + notesVal);
+
+    lines.push("", "Please confirm availability and next steps.");
+    return lines.join("\n");
+  }
+
+  function getActiveBriefText() {
+    if (state.customMessageOverride && state.customMessageOverride.trim()) {
+      return state.customMessageOverride;
+    }
+    return buildAutoBriefText();
+  }
+
+  /* Fast-Path Update (Called on keystrokes — never rebuilds Cart DOM) */
+  function updateBriefAndLinks() {
+    var stats = getCartStats();
+    var formattedTotal = formatINR(stats.total);
+    var briefText = getActiveBriefText();
+
+    var previewBadge = document.getElementById("previewTotalBadge");
+    if (previewBadge) previewBadge.textContent = formattedTotal;
+
+    if (liveMessagePreview) liveMessagePreview.textContent = briefText;
+    if (customMessageEditor && !state.isEditingMessage) customMessageEditor.value = briefText;
+    if (resetAutoMsgBtn) resetAutoMsgBtn.hidden = !state.customMessageOverride;
+    if (previewModeHint) {
+      previewModeHint.textContent = state.customMessageOverride ? "Custom edited text" : "Auto-synced live";
+    }
+
+    var waHref = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(briefText);
+    var subjectText = "App Box Order (" + stats.count + " items • " + formattedTotal + ")" + (state.user ? " [" + state.user.email + "]" : "");
+    var mailHref = "mailto:" + EMAIL_ADDR + "?subject=" + encodeURIComponent(subjectText) + "&body=" + encodeURIComponent(briefText);
+    var gmailHref = "https://mail.google.com/mail/?view=cm&fs=1&to=" + encodeURIComponent(EMAIL_ADDR) + "&su=" + encodeURIComponent(subjectText) + "&body=" + encodeURIComponent(briefText);
+
+    ["directWaCardBtn", "drawerWaBtn", "dockInstantWaBtn", "statusWhatsAppBtn", "sideWaLink"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.setAttribute("href", waHref);
+    });
+    ["directEmailCardBtn", "drawerEmailBtn", "dockInstantEmailBtn", "statusCopyEmailBtn", "sideEmailLink"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.setAttribute("href", mailHref);
+    });
+    var gmailEl = document.getElementById("directGmailCardBtn");
+    if (gmailEl) gmailEl.setAttribute("href", gmailHref);
+
+    /* Ensure all Instagram buttons keep the exact user-provided URL */
+    ["directInstaCardBtn", "drawerInstaBtn", "dockInstantInstaBtn", "sideInstaLink"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.setAttribute("href", IG_URL);
+    });
+  }
+
+  /* Order History Logger */
+  function recordCheckoutOrder(channel) {
+    var stats = getCartStats();
+    var now = new Date();
+    var orderId = "AB-" + String(now.getFullYear()).slice(-2) +
+      String(now.getMonth() + 1).padStart(2, "0") +
+      String(now.getDate()).padStart(2, "0") + "-" +
+      String(Math.floor(1000 + Math.random() * 9000));
+
+    var itemsCopy = state.cart.map(function (it) {
+      return { id: it.id, name: it.name, price: it.price, desc: it.desc, qty: it.qty };
+    });
+
+    state.orders.unshift({
+      id: orderId,
+      createdAt: now.toLocaleString("en-IN", { day: "2-digit", month: "short", year: "numeric", hour: "2-digit", minute: "2-digit" }),
+      channel: channel,
+      email: state.user ? state.user.email : "Guest",
+      clientName: (clientName && clientName.value.trim()) ? clientName.value.trim() : (state.user ? state.user.displayName : "Client"),
+      total: stats.total,
+      itemCount: stats.count,
+      items: itemsCopy,
+      addons: state.selectedAddons.slice(),
+      brief: getActiveBriefText()
+    });
+    if (state.orders.length > 20) state.orders = state.orders.slice(0, 20);
+    renderOrdersUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+  }
+
+  /* UI Renderers */
+  function renderAccountAndDrawerUI() {
+    var stats = getCartStats();
+    var signedIn = Boolean(state.user && state.user.email);
+
+    var sideAvatar = document.getElementById("abSideAvatar");
+    var sideName = document.getElementById("abSideAccountName");
+    var sideEmail = document.getElementById("abSideAccountEmail");
+    var sideLoginBtn = document.getElementById("abSideLoginBtn");
+    var sideProfileBtn = document.getElementById("abSideProfileBtn");
+    var sideLogoutBtn = document.getElementById("abSideLogoutBtn");
+    var drawerCartBadge = document.getElementById("abDrawerCartBadge");
+    var drawerOrdersBadge = document.getElementById("abDrawerOrdersBadge");
+    var drawerAccountBadge = document.getElementById("abDrawerAccountBadge");
+    var checkoutStrip = document.getElementById("checkoutAccountStrip");
+    var checkoutText = document.getElementById("checkoutAccountText");
+    var checkoutBtn = document.getElementById("checkoutAccountActionBtn");
+    var cartDrawerSub = document.getElementById("cartDrawerAccountSub");
+
+    if (drawerCartBadge) drawerCartBadge.textContent = stats.count + " • " + formatINR(stats.total);
+    if (drawerOrdersBadge) drawerOrdersBadge.textContent = String(state.orders.length);
+
+    if (signedIn) {
+      var initial = (state.user.displayName || state.user.email || "U").charAt(0).toUpperCase();
+      if (sideAvatar) sideAvatar.textContent = initial;
+      if (sideName) sideName.textContent = state.user.displayName || state.user.email.split("@")[0];
+      if (sideEmail) sideEmail.textContent = state.user.email;
+      if (sideLoginBtn) sideLoginBtn.hidden = true;
+      if (sideProfileBtn) sideProfileBtn.hidden = false;
+      if (sideLogoutBtn) sideLogoutBtn.hidden = false;
+      if (drawerAccountBadge) { drawerAccountBadge.textContent = "Active"; drawerAccountBadge.classList.add("green"); }
+      if (checkoutStrip) checkoutStrip.classList.add("signed-in");
+      if (checkoutText) checkoutText.textContent = "Account Email attached: " + state.user.email;
+      if (checkoutBtn) checkoutBtn.textContent = "My Account";
+      if (cartDrawerSub) cartDrawerSub.textContent = "Synced to account: " + state.user.email;
+    } else {
+      if (sideAvatar) sideAvatar.textContent = "G";
+      if (sideName) sideName.textContent = "Guest Visitor";
+      if (sideEmail) sideEmail.textContent = "Sign in with Email OTP to sync";
+      if (sideLoginBtn) sideLoginBtn.hidden = false;
+      if (sideProfileBtn) sideProfileBtn.hidden = true;
+      if (sideLogoutBtn) sideLogoutBtn.hidden = true;
+      if (drawerAccountBadge) { drawerAccountBadge.textContent = "Guest"; drawerAccountBadge.classList.remove("green"); }
+      if (checkoutStrip) checkoutStrip.classList.remove("signed-in");
+      if (checkoutText) checkoutText.textContent = "Guest checkout — Login with Email OTP to save & sync orders";
+      if (checkoutBtn) checkoutBtn.textContent = "Login";
+      if (cartDrawerSub) cartDrawerSub.textContent = "Guest Cart • Login to sync to your account";
+    }
+
+    var accAvatar = document.getElementById("abAccAvatar");
+    var accEmail = document.getElementById("abAccEmailDisplay");
+    var accCartCount = document.getElementById("abAccCartCount");
+    var accOrdersCount = document.getElementById("abAccOrdersCount");
+    var accNameInput = document.getElementById("abAccNameInput");
+    var accPhoneInput = document.getElementById("abAccPhoneInput");
+    if (accCartCount) accCartCount.textContent = String(stats.count);
+    if (accOrdersCount) accOrdersCount.textContent = String(state.orders.length);
+    if (signedIn) {
+      if (accAvatar) accAvatar.textContent = (state.user.displayName || state.user.email).charAt(0).toUpperCase();
+      if (accEmail) accEmail.textContent = state.user.email;
+      if (accNameInput && document.activeElement !== accNameInput) accNameInput.value = state.user.displayName || "";
+      if (accPhoneInput && document.activeElement !== accPhoneInput) accPhoneInput.value = state.user.phone || "";
+    }
+    updateAccountSyncUI();
+  }
+
+  function renderOrdersUI() {
+    var listEl = document.getElementById("abOrdersList");
+    var labelEl = document.getElementById("abOrdersAccountLabel");
+    if (!listEl) return;
+
+    if (labelEl) {
+      labelEl.textContent = state.user
+        ? "Saved order history for " + state.user.email
+        : "Guest order history (Sign in to sync orders across devices)";
+    }
+
+    if (state.orders.length === 0) {
+      listEl.innerHTML =
+        '<div style="text-align:center;padding:30px 14px;color:var(--text-secondary);">' +
+          '<strong style="color:var(--text);">No orders recorded yet.</strong><br><br>' +
+          'Whenever you send an order via WhatsApp, Email, Gmail, or Instagram, it logs here so you can reorder or download a receipt anytime.' +
+        '</div>';
+      return;
+    }
+
+    var parts = [];
+    for (var i = 0; i < state.orders.length; i++) {
+      var ord = state.orders[i];
+      var names = [];
+      if (ord.items) {
+        for (var k = 0; k < ord.items.length; k++) {
+          names.push(escapeHtml(ord.items[k].name) + (ord.items[k].qty > 1 ? " x " + ord.items[k].qty : ""));
+        }
+      }
+      if (ord.addons) {
+        for (var m = 0; m < ord.addons.length; m++) {
+          var ad = ADDONS_CATALOG[ord.addons[m]];
+          if (ad) names.push(escapeHtml(ad.name));
+        }
+      }
+      parts.push(
+        '<div class="ab-order-card">' +
+          '<div class="ab-order-top">' +
+            '<span class="ab-order-id">' + escapeHtml(ord.id) + '</span>' +
+            '<span class="ab-side-badge">' + escapeHtml(ord.channel) + '</span>' +
+          '</div>' +
+          '<div class="ab-order-meta">' + escapeHtml(ord.createdAt) + ' • ' + escapeHtml(ord.email) + '</div>' +
+          '<div class="ab-order-items">' + (names.length ? names.join(" • ") : "Custom Quote") + '</div>' +
+          (ord.total > 0 ? '<div style="font-weight:700;color:#7DD3FC;font-size:14px;">Total: ' + formatINR(ord.total) + '</div>' : '') +
+          '<div class="ab-order-actions">' +
+            '<button type="button" class="btn ghost sm" data-reorder-idx="' + i + '">Reorder</button>' +
+            '<button type="button" class="btn ghost sm" data-resend-wa-idx="' + i + '">Send WA</button>' +
+            '<button type="button" class="btn ghost sm" data-copy-order-idx="' + i + '">Copy</button>' +
+            '<button type="button" class="btn ghost sm" data-download-order-idx="' + i + '">Receipt</button>' +
+          '</div>' +
+        '</div>'
+      );
+    }
+    listEl.innerHTML = parts.join("");
+  }
+
+  function renderAllCartUI() {
+    var stats = getCartStats();
+    var formattedTotal = formatINR(stats.total);
+
+    ["headerCartCount", "heroCartCount", "formCartCount", "dockCartCount"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = String(stats.count);
+    });
+    ["headerCartTotal", "formCartTotal", "drawerCartTotal", "dockCartTotal"].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (el) el.textContent = formattedTotal;
+    });
+
+    var dockStatusText = document.getElementById("dockStatusText");
+    if (dockStatusText) {
+      dockStatusText.innerHTML = stats.count > 0
+        ? "<strong>" + stats.count + " item" + (stats.count > 1 ? "s" : "") + "</strong> in Cart (" + formattedTotal + ")"
+        : "Cart is empty — select + Add to Cart";
+    }
+
+    var addBtns = document.querySelectorAll("[data-cart-id]");
+    for (var b = 0; b < addBtns.length; b++) {
+      var btn = addBtns[b];
+      var itemId = btn.getAttribute("data-cart-id");
+      var cartIdx = findCartItem(itemId);
+      var inCart = cartIdx !== -1;
+      var card = btn.closest(".card");
+      if (card) card.classList.toggle("in-cart", inCart);
+
+      var actionsRow = btn.parentNode;
+      var existingStepper = actionsRow ? actionsRow.querySelector(".card-qty-wrap") : null;
+      if (inCart) {
+        btn.hidden = true;
+        var qty = state.cart[cartIdx].qty;
+        if (!existingStepper && actionsRow) {
+          existingStepper = document.createElement("div");
+          existingStepper.className = "card-qty-wrap";
+          existingStepper.innerHTML =
+            '<button type="button" class="card-qty-btn" data-card-qty-id="' + escapeHtml(itemId) + '" data-card-qty-delta="-1" aria-label="Decrease quantity">&minus;</button>' +
+            '<span class="card-qty-val">' + qty + '</span>' +
+            '<button type="button" class="card-qty-btn" data-card-qty-id="' + escapeHtml(itemId) + '" data-card-qty-delta="1" aria-label="Increase quantity">+</button>';
+          actionsRow.insertBefore(existingStepper, btn);
+        } else if (existingStepper) {
+          var valSpan = existingStepper.querySelector(".card-qty-val");
+          if (valSpan) valSpan.textContent = String(qty);
+        }
+      } else {
+        btn.hidden = false;
+        btn.textContent = itemId.indexOf("plan-") === 0 ? "+ Add Plan" : "+ Add to Cart";
+        if (existingStepper && existingStepper.parentNode) existingStepper.parentNode.removeChild(existingStepper);
+      }
+    }
+
+    if (cartItemsList) {
+      if (state.cart.length === 0 && state.selectedAddons.length === 0) {
+        cartItemsList.innerHTML = '<div style="text-align:center;padding:32px 12px;color:var(--text-secondary);">Your Cart is empty.<br><br>Select <strong style="color:var(--text);">+ Add to Cart</strong> on any Service, Plan, or Add-on.</div>';
+      } else {
+        var htmlParts = [];
+        for (var c = 0; c < state.cart.length; c++) {
+          var item = state.cart[c];
+          htmlParts.push(
+            '<div class="cart-item-row">' +
+              '<div class="cart-item-top">' +
+                '<div><strong style="color:var(--text);">' + escapeHtml(item.name) + '</strong><div style="font-size:11.8px;color:var(--text-secondary);margin-top:2px;">' + escapeHtml(item.desc) + '</div></div>' +
+                '<strong style="color:#7DD3FC;">' + formatINR(item.price * item.qty) + '</strong>' +
+              '</div>' +
+              '<div class="cart-item-bottom">' +
+                '<div class="qty-control">' +
+                  '<button type="button" class="qty-btn" data-qty-id="' + escapeHtml(item.id) + '" data-qty-delta="-1" aria-label="Decrease quantity">&minus;</button>' +
+                  '<span style="font-weight:700;min-width:18px;text-align:center;">' + item.qty + '</span>' +
+                  '<button type="button" class="qty-btn" data-qty-id="' + escapeHtml(item.id) + '" data-qty-delta="1" aria-label="Increase quantity">+</button>' +
+                '</div>' +
+                '<button type="button" class="cart-remove-btn" data-remove-id="' + escapeHtml(item.id) + '">Remove</button>' +
+              '</div>' +
+            '</div>'
+          );
+        }
+        for (var a = 0; a < state.selectedAddons.length; a++) {
+          var adObj = ADDONS_CATALOG[state.selectedAddons[a]];
+          if (!adObj) continue;
+          htmlParts.push(
+            '<div class="cart-item-row" style="border-color:rgba(56,189,248,0.35);">' +
+              '<div class="cart-item-top">' +
+                '<div><strong style="color:var(--text);">' + escapeHtml(adObj.name) + '</strong><div style="font-size:11.5px;color:var(--accent-sky);margin-top:2px;">Add-on • ' + escapeHtml(adObj.desc) + '</div></div>' +
+                '<strong style="color:' + (adObj.price === 0 ? '#86EFAC' : '#7DD3FC') + ';">' + (adObj.price === 0 ? 'FREE' : '+' + formatINR(adObj.price)) + '</strong>' +
+              '</div>' +
+              '<div class="cart-item-bottom" style="justify-content:flex-end;">' +
+                '<button type="button" class="cart-remove-btn" data-remove-addon="' + escapeHtml(adObj.id) + '">Remove Add-on</button>' +
+              '</div>' +
+            '</div>'
+          );
+        }
+        cartItemsList.innerHTML = htmlParts.join("");
+      }
+    }
+
+    var drawerCartBadge = document.getElementById("abDrawerCartBadge");
+    if (drawerCartBadge) drawerCartBadge.textContent = stats.count + " • " + formattedTotal;
+
+    updateBriefAndLinks();
+  }
+
+  function applyPreset(presetKey, specificItemId) {
+    var preset = PRESETS[presetKey];
+    if (!preset) return;
+    state.activePreset = presetKey;
+    state.projectType = preset.projectType;
+    state.scope = preset.scope;
+    state.selectedStyles = preset.styles.slice();
+    state.deliveryPriority = preset.priority;
+    state.customMessageOverride = "";
+
+    if (specificItemId) ensureInCart(specificItemId);
+    else if (preset.defaultService && state.cart.length === 0) ensureInCart(preset.defaultService);
+
+    if (preset.hostingChoice === "ghpages") {
+      state.hostingChoice = "ghpages";
+      addAddonSilent("addon-ghpages");
+    } else {
+      state.hostingChoice = "self";
+      removeAddonSilent("addon-ghpages");
+    }
+
+    applyBuilderChipsUI();
+    applyAddonsUI();
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+    showToast("Preset applied: " + preset.label);
+  }
+
+  /* Drawers & Modals Open/Close */
+  function openSideDrawer() {
+    if (!sideDrawerBackdrop) return;
+    renderAccountAndDrawerUI();
+    sideDrawerBackdrop.classList.add("open");
+    sideDrawerBackdrop.setAttribute("aria-hidden", "false");
+    var btn = document.getElementById("abMenuBtnHeader");
+    if (btn) btn.setAttribute("aria-expanded", "true");
+  }
+  function closeSideDrawer() {
+    if (!sideDrawerBackdrop) return;
+    sideDrawerBackdrop.classList.remove("open");
+    sideDrawerBackdrop.setAttribute("aria-hidden", "true");
+    var btn = document.getElementById("abMenuBtnHeader");
+    if (btn) btn.setAttribute("aria-expanded", "false");
+  }
+  function openCartDrawer() {
+    closeSideDrawer();
+    if (!cartBackdrop) return;
+    if (drawerClientName && clientName) drawerClientName.value = clientName.value;
+    cartBackdrop.classList.add("open");
+    cartBackdrop.setAttribute("aria-hidden", "false");
+  }
+  function closeCartDrawer() {
+    if (!cartBackdrop) return;
+    cartBackdrop.classList.remove("open");
+    cartBackdrop.setAttribute("aria-hidden", "true");
+  }
+  function openOrdersModal() {
+    closeSideDrawer();
+    renderOrdersUI();
+    if (!ordersBackdrop) return;
+    ordersBackdrop.classList.add("open");
+    ordersBackdrop.setAttribute("aria-hidden", "false");
+  }
+  function closeOrdersModal() {
+    if (!ordersBackdrop) return;
+    ordersBackdrop.classList.remove("open");
+    ordersBackdrop.setAttribute("aria-hidden", "true");
+  }
+  function openAccountModal() {
+    closeSideDrawer();
+    if (!state.user) {
+      if (window.ABAuth) window.ABAuth.openAuthModal();
+      return;
+    }
+    renderAccountAndDrawerUI();
+    if (!accountBackdrop) return;
+    accountBackdrop.classList.add("open");
+    accountBackdrop.setAttribute("aria-hidden", "false");
+  }
+  function closeAccountModal() {
+    if (!accountBackdrop) return;
+    accountBackdrop.classList.remove("open");
+    accountBackdrop.setAttribute("aria-hidden", "true");
+  }
+
+  /* Navigation & Sliding Pill */
+  function updateLiquidPill(targetTab, shouldScrollNav) {
+    if (!targetTab || !liquidPill || !mainNav) return;
+    var offsetLeft = targetTab.offsetLeft;
+    var tabWidth = targetTab.offsetWidth;
+    liquidPill.style.width = Math.max(44, tabWidth) + "px";
+    liquidPill.style.transform = "translate3d(" + offsetLeft + "px, 0, 0)";
+    if (shouldScrollNav) {
+      var targetScroll = offsetLeft - (mainNav.clientWidth / 2) + (tabWidth / 2);
+      mainNav.scrollTo({ left: Math.max(0, targetScroll), behavior: "smooth" });
+    }
+  }
+
+  function setActiveNavUI(sectionId, shouldScrollNav) {
+    state.activeSection = sectionId;
+    var activeBtn = null;
+    for (var i = 0; i < navTabs.length; i++) {
+      var isMatch = navTabs[i].getAttribute("data-target") === sectionId;
+      navTabs[i].classList.toggle("active", isMatch);
+      if (isMatch) activeBtn = navTabs[i];
+    }
+    drawerNavBtns.forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-drawer-nav") === sectionId);
+    });
+    if (activeBtn) updateLiquidPill(activeBtn, shouldScrollNav);
+  }
+
+  function navigateToSection(sectionId, toastMsg) {
+    closeSideDrawer();
+    var targetEl = document.getElementById(sectionId);
+    if (!targetEl) return;
+    setActiveNavUI(sectionId, true);
+    if (state.singleTabMode) {
+      for (var i = 0; i < sections.length; i++) {
+        sections[i].classList.toggle("active-page", sections[i].id === sectionId);
+      }
+      window.scrollTo(0, 0);
+    } else {
+      targetEl.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    if (toastMsg) showToast(toastMsg);
+  }
+
+  function openWhatsApp() {
+    recordCheckoutOrder("WhatsApp");
+    var url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(getActiveBriefText());
+    showToast("Opening WhatsApp with your ready order...");
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+
+  function bindClick(id, fn) {
+    var el = document.getElementById(id);
+    if (el) el.addEventListener("click", fn);
+  }
+
+  /* Null-Safe Event Bindings */
+  bindClick("abMenuBtnHeader", openSideDrawer);
+  bindClick("closeSideDrawerBtn", closeSideDrawer);
+  if (sideDrawerBackdrop) sideDrawerBackdrop.addEventListener("click", function (e) { if (e.target === sideDrawerBackdrop) closeSideDrawer(); });
+
+  drawerNavBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () { navigateToSection(btn.getAttribute("data-drawer-nav")); });
+  });
+
+  bindClick("abDrawerCartBtn", openCartDrawer);
+  bindClick("abDrawerOrdersBtn", openOrdersModal);
+  bindClick("abDrawerAccountBtn", openAccountModal);
+
+  bindClick("abSideLoginBtn", function () { closeSideDrawer(); if (window.ABAuth) window.ABAuth.openAuthModal(); });
+  bindClick("abSideProfileBtn", openAccountModal);
+  bindClick("abSideLogoutBtn", function () { closeSideDrawer(); if (window.ABAuth) window.ABAuth.signOut(); });
+  bindClick("checkoutAccountActionBtn", function () {
+    if (state.user) openAccountModal();
+    else if (window.ABAuth) window.ABAuth.openAuthModal();
+  });
+
+  /* Orders Modal Actions */
+  bindClick("closeOrdersBtn", closeOrdersModal);
+  if (ordersBackdrop) ordersBackdrop.addEventListener("click", function (e) { if (e.target === ordersBackdrop) closeOrdersModal(); });
+  var ordersListEl = document.getElementById("abOrdersList");
+  if (ordersListEl) {
+    ordersListEl.addEventListener("click", function (e) {
+      var rBtn = e.target.closest("[data-reorder-idx]");
+      if (rBtn) {
+        var ord = state.orders[parseInt(rBtn.getAttribute("data-reorder-idx"), 10)];
+        if (ord) {
+          if (Array.isArray(ord.items)) {
+            state.cart = ord.items.map(function (it) { return { id: it.id, name: it.name, price: it.price, desc: it.desc, qty: it.qty }; });
+          }
+          state.selectedAddons = Array.isArray(ord.addons) ? ord.addons.filter(function (id) { return Boolean(ADDONS_CATALOG[id]); }) : [];
+          syncHostingChoiceFromAddons();
+          applyBuilderChipsUI();
+          applyAddonsUI();
+          renderAllCartUI();
+          renderAccountAndDrawerUI();
+          persistCurrentState(true);
+          closeOrdersModal();
+          openCartDrawer();
+          showToast("Loaded " + ord.id + " into Cart");
+        }
+        return;
+      }
+      var wBtn = e.target.closest("[data-resend-wa-idx]");
+      if (wBtn) {
+        var wOrd = state.orders[parseInt(wBtn.getAttribute("data-resend-wa-idx"), 10)];
+        if (wOrd) {
+          window.open("https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(wOrd.brief), "_blank", "noopener,noreferrer");
+          showToast("Opening WhatsApp for " + wOrd.id);
+        }
+        return;
+      }
+      var dBtn = e.target.closest("[data-download-order-idx]");
+      if (dBtn) {
+        var dOrd = state.orders[parseInt(dBtn.getAttribute("data-download-order-idx"), 10)];
+        if (dOrd) {
+          var txt = "APP BOX ORDER RECEIPT\nTransforming Ideas Into Impact | Founded by Purushottam Giri\n============================================================\nOrder ID: " +
+            dOrd.id + "\nDate: " + dOrd.createdAt + "\nChannel: " + dOrd.channel + "\nAccount: " + dOrd.email + "\n\n" + dOrd.brief + "\n";
+          var blob = new Blob([txt], { type: "text/plain;charset=utf-8" });
+          var url = URL.createObjectURL(blob);
+          var a = document.createElement("a");
+          a.href = url;
+          a.download = dOrd.id + "-receipt.txt";
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+          setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+          showToast("Downloaded " + dOrd.id + "-receipt.txt");
+        }
+        return;
+      }
+      var cBtn = e.target.closest("[data-copy-order-idx]");
+      if (cBtn) {
+        var cOrd = state.orders[parseInt(cBtn.getAttribute("data-copy-order-idx"), 10)];
+        if (cOrd) copyText(cOrd.brief, "Order " + cOrd.id + " copied");
+      }
+    });
+  }
+
+  /* Account Modal Actions */
+  bindClick("closeAccountBtn", closeAccountModal);
+  if (accountBackdrop) accountBackdrop.addEventListener("click", function (e) { if (e.target === accountBackdrop) closeAccountModal(); });
+  bindClick("abAccSaveBtn", function () {
+    if (!state.user) return;
+    var nInp = document.getElementById("abAccNameInput");
+    var pInp = document.getElementById("abAccPhoneInput");
+    state.user.displayName = nInp ? nInp.value.trim() : "";
+    state.user.phone = pInp ? pInp.value.trim() : "";
+    if (clientName && state.user.displayName) clientName.value = state.user.displayName;
+    if (drawerClientName && state.user.displayName) drawerClientName.value = state.user.displayName;
+    if (clientContact && state.user.phone) clientContact.value = state.user.phone;
+    updateBriefAndLinks();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+    showToast("Profile saved for " + state.user.email);
+  });
+  bindClick("abAccOpenCartBtn", function () { closeAccountModal(); openCartDrawer(); });
+  bindClick("abAccOpenOrdersBtn", function () { closeAccountModal(); openOrdersModal(); });
+  bindClick("abAccSignOutBtn", function () { closeAccountModal(); if (window.ABAuth) window.ABAuth.signOut(); });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      closeSideDrawer();
+      closeCartDrawer();
+      closeOrdersModal();
+      closeAccountModal();
+    }
+  });
+
+  /* Main Nav & Tabs/Scroll Mode Toggle */
+  navTabs.forEach(function (tab) {
+    tab.addEventListener("click", function () { navigateToSection(tab.getAttribute("data-target")); });
+  });
+  footerNavBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () { navigateToSection(btn.getAttribute("data-footer-nav")); });
+  });
+
+  var viewModeBtn = document.getElementById("viewModeBtn");
+  var viewModeLabel = document.getElementById("viewModeLabel");
+  if (viewModeBtn && mainContainer) {
+    viewModeBtn.addEventListener("click", function () {
+      state.singleTabMode = !state.singleTabMode;
+      mainContainer.classList.toggle("single-tab-mode", state.singleTabMode);
+      if (viewModeLabel) viewModeLabel.textContent = state.singleTabMode ? "Tabs" : "Scroll";
+      sections.forEach(function (sec) {
+        sec.classList.toggle("active-page", !state.singleTabMode || sec.id === state.activeSection);
+      });
+      var currentTab = document.querySelector('.nav-tab[data-target="' + state.activeSection + '"]');
+      if (currentTab) updateLiquidPill(currentTab, true);
+      showToast(state.singleTabMode ? "Switched to Instant Tab Mode" : "Switched to Full Scroll Mode");
+    });
+  }
+
+  /* Status Bar, Hero & Growth CTAs */
+  bindClick("statusStudioBtn", function () { navigateToSection("contact", "Build & send your order below"); });
+  bindClick("statusFastTrackBtn", function () { navigateToSection("services", "24–72h Fast Delivery on Websites & Code"); });
+  bindClick("statusWhatsAppBtn", function () { recordCheckoutOrder("WhatsApp"); showToast("Opening WhatsApp..."); });
+  bindClick("statusCopyEmailBtn", function () { copyText(EMAIL_ADDR, "Email copied & opening Mail..."); });
+  bindClick("brandHomeBtn", function () { navigateToSection("home"); });
+  bindClick("heroPromoBadge", function () { navigateToSection("growth"); });
+  bindClick("heroExploreServicesBtn", function () { navigateToSection("services"); });
+  bindClick("heroStartProjectBtn", function () { navigateToSection("contact"); });
+  bindClick("growthStartBuildBtn", function () { navigateToSection("services"); });
+  bindClick("heroOpenCartBtn", openCartDrawer);
+  bindClick("openCartHeaderBtn", openCartDrawer);
+  bindClick("openCartFromFormBtn", openCartDrawer);
+  bindClick("dockCartBtn", openCartDrawer);
+  bindClick("closeCartBtn", closeCartDrawer);
+  if (cartBackdrop) cartBackdrop.addEventListener("click", function (e) { if (e.target === cartBackdrop) closeCartDrawer(); });
+
+  /* Service Search & Filter */
+  var filterPills = document.querySelectorAll("[data-filter]");
+  var serviceCards = document.querySelectorAll("#servicesGrid > article");
+  var serviceSearchInput = document.getElementById("serviceSearchInput");
+  var serviceSearchClear = document.getElementById("serviceSearchClear");
+  var servicesGrid = document.getElementById("servicesGrid");
+
+  function applyServiceFilterAndSearch() {
+    var q = (state.searchQuery || "").trim().toLowerCase();
+    var visibleCount = 0;
+    serviceCards.forEach(function (card) {
+      var catMatch = state.activeFilter === "all" || card.getAttribute("data-category") === state.activeFilter;
+      var textMatch = !q || card.textContent.toLowerCase().indexOf(q) !== -1;
+      var show = catMatch && textMatch;
+      card.hidden = !show;
+      if (show) visibleCount++;
+    });
+    if (serviceSearchClear) serviceSearchClear.hidden = !q;
+
+    var emptyMsg = document.getElementById("abEmptySearchMsg");
+    if (visibleCount === 0 && servicesGrid) {
+      if (!emptyMsg) {
+        emptyMsg = document.createElement("div");
+        emptyMsg.id = "abEmptySearchMsg";
+        emptyMsg.className = "ab-empty-search";
+        emptyMsg.innerHTML = 'No services matched. <button type="button" class="ab-inline-login-btn" id="abResetSearchBtn" style="margin-left:8px;">Reset</button>';
+        servicesGrid.appendChild(emptyMsg);
+        bindClick("abResetSearchBtn", function () {
+          state.activeFilter = "all";
+          state.searchQuery = "";
+          if (serviceSearchInput) serviceSearchInput.value = "";
+          filterPills.forEach(function (p) { p.classList.toggle("active", p.getAttribute("data-filter") === "all"); });
+          applyServiceFilterAndSearch();
+        });
+      }
+    } else if (emptyMsg && emptyMsg.parentNode) {
+      emptyMsg.parentNode.removeChild(emptyMsg);
+    }
+  }
+
+  filterPills.forEach(function (pill) {
+    pill.addEventListener("click", function () {
+      state.activeFilter = pill.getAttribute("data-filter");
+      filterPills.forEach(function (p) { p.classList.toggle("active", p === pill); });
+      applyServiceFilterAndSearch();
+    });
+  });
+
+  if (serviceSearchInput) {
+    serviceSearchInput.addEventListener("input", function () {
+      state.searchQuery = serviceSearchInput.value;
+      applyServiceFilterAndSearch();
+    });
+  }
+  bindClick("serviceSearchClear", function () {
+    state.searchQuery = "";
+    if (serviceSearchInput) { serviceSearchInput.value = ""; serviceSearchInput.focus(); }
+    applyServiceFilterAndSearch();
+  });
+
+  /* Inline Quantity Stepper Delegation */
+  document.addEventListener("click", function (e) {
+    var cqBtn = e.target.closest("[data-card-qty-id]");
+    if (cqBtn) updateCartQty(cqBtn.getAttribute("data-card-qty-id"), parseInt(cqBtn.getAttribute("data-card-qty-delta"), 10));
+  });
+
+  /* Order Builder Chips */
+  document.querySelectorAll("[data-preset-btn]").forEach(function (btn) {
+    btn.addEventListener("click", function () { applyPreset(btn.getAttribute("data-preset-btn")); });
+  });
+  document.querySelectorAll("[data-ptype]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      state.projectType = btn.getAttribute("data-ptype");
+      state.customMessageOverride = "";
+      applyBuilderChipsUI();
+      updateBriefAndLinks();
+      persistCurrentState(true);
+    });
+  });
+  document.querySelectorAll("[data-scope]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      state.scope = btn.getAttribute("data-scope");
+      state.customMessageOverride = "";
+      applyBuilderChipsUI();
+      updateBriefAndLinks();
+      persistCurrentState(true);
+    });
+  });
+  document.querySelectorAll("[data-style]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var st = btn.getAttribute("data-style");
+      var idx = state.selectedStyles.indexOf(st);
+      if (idx === -1) state.selectedStyles.push(st);
+      else state.selectedStyles.splice(idx, 1);
+      state.customMessageOverride = "";
+      applyBuilderChipsUI();
+      updateBriefAndLinks();
+      persistCurrentState(true);
+    });
+  });
+  document.querySelectorAll("[data-priority]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      state.deliveryPriority = btn.getAttribute("data-priority");
+      state.customMessageOverride = "";
+      applyBuilderChipsUI();
+      updateBriefAndLinks();
+      persistCurrentState(true);
+    });
+  });
+  document.querySelectorAll("[data-hosting]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var choice = btn.getAttribute("data-hosting");
+      applyHostingChoice(choice);
+      showToast("Hosting: " + (HOSTING_LABELS[choice] || choice));
+    });
+  });
+
+  document.querySelectorAll("[data-addon-toggle]").forEach(function (btn) {
+    btn.addEventListener("click", function () { toggleAddon(btn.getAttribute("data-addon-toggle")); });
+  });
+
+  /* Inline Message Edit Toggle */
+  if (toggleEditMsgBtn && customMessageEditor && liveMessagePreview) {
+    toggleEditMsgBtn.addEventListener("click", function () {
+      state.isEditingMessage = !state.isEditingMessage;
+      toggleEditMsgBtn.classList.toggle("active", state.isEditingMessage);
+      toggleEditMsgBtn.textContent = state.isEditingMessage ? "Done Editing" : "Edit Text";
+      liveMessagePreview.hidden = state.isEditingMessage;
+      customMessageEditor.hidden = !state.isEditingMessage;
+      if (state.isEditingMessage) {
+        customMessageEditor.value = getActiveBriefText();
+        customMessageEditor.focus();
+      } else {
+        updateBriefAndLinks();
+      }
+    });
+    customMessageEditor.addEventListener("input", function () {
+      state.customMessageOverride = customMessageEditor.value;
+      updateBriefAndLinks();
+    });
+  }
+  bindClick("resetAutoMsgBtn", function () {
+    state.customMessageOverride = "";
+    state.isEditingMessage = false;
+    if (toggleEditMsgBtn) { toggleEditMsgBtn.classList.remove("active"); toggleEditMsgBtn.textContent = "Edit Text"; }
+    if (liveMessagePreview) liveMessagePreview.hidden = false;
+    if (customMessageEditor) customMessageEditor.hidden = true;
+    updateBriefAndLinks();
+    showToast("Reset to auto-generated message");
+  });
+
+  /* Quick Order & Cart Buttons */
+  document.querySelectorAll("[data-quick-order]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      applyPreset(btn.getAttribute("data-preset") || "landing", btn.getAttribute("data-quick-order"));
+      navigateToSection("contact", "Ready! Tap Send below");
+    });
+  });
+
+  bindClick("drawerGoCheckoutBtn", function () { closeCartDrawer(); navigateToSection("contact"); });
+
+  document.querySelectorAll("[data-cart-id]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      toggleCartItem(
+        btn.getAttribute("data-cart-id"),
+        btn.getAttribute("data-cart-name"),
+        parseInt(btn.getAttribute("data-cart-price") || "0", 10),
+        btn.getAttribute("data-cart-desc") || ""
+      );
+    });
+  });
+
+  if (cartItemsList) {
+    cartItemsList.addEventListener("click", function (e) {
+      var qBtn = e.target.closest("[data-qty-id]");
+      if (qBtn) { updateCartQty(qBtn.getAttribute("data-qty-id"), parseInt(qBtn.getAttribute("data-qty-delta"), 10)); return; }
+      var rBtn = e.target.closest("[data-remove-id]");
+      if (rBtn) {
+        var idx = findCartItem(rBtn.getAttribute("data-remove-id"));
+        if (idx !== -1) {
+          if (!state.user) state.guestCartTouched = true;
+          var rem = state.cart.splice(idx, 1)[0];
+          state.customMessageOverride = "";
+          showToast("Removed " + rem.name);
+          renderAllCartUI();
+          renderAccountAndDrawerUI();
+          persistCurrentState(true);
+        }
+        return;
+      }
+      var raBtn = e.target.closest("[data-remove-addon]");
+      if (raBtn) toggleAddon(raBtn.getAttribute("data-remove-addon"));
+    });
+  }
+
+  bindClick("clearCartBtn", function () {
+    if (!state.user) state.guestCartTouched = true;
+    state.cart = [];
+    state.selectedAddons = [];
+    state.hostingChoice = "self";
+    state.customMessageOverride = "";
+    applyBuilderChipsUI();
+    applyAddonsUI();
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    persistCurrentState(true);
+    showToast("Cleared all items from Cart");
+  });
+
+  /* Fast-Path Debounced Input Listeners */
+  function schedulePersist() {
+    if (saveInputTimer) clearTimeout(saveInputTimer);
+    saveInputTimer = setTimeout(function () { persistCurrentState(true); }, 550);
+  }
+  if (clientName) {
+    clientName.addEventListener("input", function () {
+      if (drawerClientName) drawerClientName.value = clientName.value;
+      if (state.user) state.user.displayName = clientName.value.trim();
+      updateBriefAndLinks();
+      schedulePersist();
+    });
+  }
+  if (drawerClientName) {
+    drawerClientName.addEventListener("input", function () {
+      if (clientName) clientName.value = drawerClientName.value;
+      if (state.user) state.user.displayName = drawerClientName.value.trim();
+      updateBriefAndLinks();
+      schedulePersist();
+    });
+  }
+  if (clientContact) {
+    clientContact.addEventListener("input", function () {
+      if (state.user) state.user.phone = clientContact.value.trim();
+      updateBriefAndLinks();
+      schedulePersist();
+    });
+  }
+  if (projectNotes) {
+    projectNotes.addEventListener("input", function () {
+      updateBriefAndLinks();
+      schedulePersist();
+    });
+  }
+
+  /* Outbound Send Actions (Instagram auto-copies message + opens exact URL) */
+  function handleInstagramCheckout(closeDrawer) {
+    recordCheckoutOrder("Instagram");
+    copyText(getActiveBriefText(), "Order copied! Paste & DM " + IG_HANDLE);
+    if (closeDrawer) closeSideDrawer();
+  }
+
+  var bookingForm = document.getElementById("bookingForm");
+  if (bookingForm) bookingForm.addEventListener("submit", function (e) { e.preventDefault(); openWhatsApp(); });
+  bindClick("directWaCardBtn", function () { recordCheckoutOrder("WhatsApp"); showToast("Opening WhatsApp..."); });
+  bindClick("directEmailCardBtn", function () { recordCheckoutOrder("Email"); showToast("Opening Email..."); });
+  bindClick("directGmailCardBtn", function () { recordCheckoutOrder("Gmail"); showToast("Opening Gmail..."); });
+  bindClick("directInstaCardBtn", function () { handleInstagramCheckout(false); });
+  bindClick("copyBriefBtn", function () { copyText(getActiveBriefText(), "Ready order message copied!"); });
+
+  bindClick("nativeShareBtn", function () {
+    var txt = getActiveBriefText();
+    if (navigator.share) {
+      recordCheckoutOrder("Share Sheet");
+      navigator.share({ title: "App Box Order", text: txt }).catch(function () {});
+    } else {
+      copyText(txt, "Order copied — paste in WhatsApp, Insta, or Email!");
+    }
+  });
+
+  bindClick("drawerWaBtn", function () { recordCheckoutOrder("WhatsApp"); showToast("Opening WhatsApp..."); });
+  bindClick("drawerEmailBtn", function () { recordCheckoutOrder("Email"); showToast("Opening Email..."); });
+  bindClick("drawerInstaBtn", function () { handleInstagramCheckout(false); });
+
+  bindClick("dockInstantWaBtn", function () { recordCheckoutOrder("WhatsApp"); showToast("Opening WhatsApp..."); });
+  bindClick("dockInstantEmailBtn", function () { recordCheckoutOrder("Email"); showToast("Opening Email..."); });
+  bindClick("dockInstantInstaBtn", function () { handleInstagramCheckout(false); });
+
+  bindClick("sideWaLink", function () { recordCheckoutOrder("WhatsApp"); closeSideDrawer(); });
+  bindClick("sideEmailLink", function () { recordCheckoutOrder("Email"); closeSideDrawer(); });
+  bindClick("sideInstaLink", function () { handleInstagramCheckout(true); });
+
+  /* Single Passive rAF Scroll Handler (Progress Bar + Back-to-Top) */
+  var progressBar = document.getElementById("abScrollProgress");
+  var backToTopBtn = document.getElementById("abBackToTopBtn");
+  var rafScroll = false;
+  window.addEventListener("scroll", function () {
+    if (rafScroll) return;
+    rafScroll = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY;
+      if (progressBar) {
+        var maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+        var ratio = Math.min(1, Math.max(0, y / maxScroll));
+        progressBar.style.transform = "scaleX(" + ratio.toFixed(4) + ")";
+      }
+      if (backToTopBtn) {
+        backToTopBtn.classList.toggle("visible", y > 360);
+      }
+      rafScroll = false;
+    });
+  }, { passive: true });
+
+  bindClick("abBackToTopBtn", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* Bridge for Appwrite Auth Script */
+  window.ABApp = {
+    onUserSignedIn: function (userObj) {
+      loadAccountForUser(userObj, userObj && userObj.prefs ? userObj.prefs : null);
+    },
+    onUserSignedOut: function () {
+      resetToGuestSession();
+      showToast("Signed out — switched to Guest mode");
+    },
+    openAccountModal: openAccountModal,
+    openOrdersModal: openOrdersModal,
+    openCartDrawer: openCartDrawer,
+    showToast: showToast
+  };
+
+  function init() {
+    if (initialized) return;
+    initialized = true;
+    var guestData = safeGetStorage(GUEST_STORAGE_KEY);
+    if (guestData) applySnapshotToState(guestData, "");
+    applyBuilderChipsUI();
+    applyAddonsUI();
+    var activeTab = document.querySelector(".nav-tab.active") || navTabs[0];
+    if (activeTab) updateLiquidPill(activeTab, false);
+    renderAllCartUI();
+    renderAccountAndDrawerUI();
+    renderOrdersUI();
+  }
+
+  window.addEventListener("resize", function () {
+    var activeTab = document.querySelector(".nav-tab.active") || navTabs[0];
+    if (activeTab) updateLiquidPill(activeTab, false);
+  }, { passive: true });
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>
+
+<!-- =========================================================
+     APPWRITE LIVE EMAIL OTP AUTH & DATA-ISOLATED CLOUD SYNC
+     Pre-configured with Project ID: 6b000dfb0005f103de3d
+     Merges ab_account_json safely without touching pv_account_json
+     ========================================================= -->
+<script>
+(function () {
+  "use strict";
+
+  var APPWRITE_CONFIG = {
+    endpoint: 'https://sgp.cloud.appwrite.io/v1',
+    projectId: '6b000dfb0005f103de3d'
+  };
+
+  var COOKIE_KEY = 'ab_aw_cookie_fallback';
+  var SKIP_KEY = 'ab_auth_skipped';
+  var isLive = Boolean(
+    APPWRITE_CONFIG.endpoint &&
+    APPWRITE_CONFIG.projectId &&
+    APPWRITE_CONFIG.projectId.indexOf('YOUR_APPWRITE') === -1
+  );
+  var isSignedIn = false;
+
+  /* Keeps the latest fetched remote prefs so Paradoverse's pv_account_json is always preserved */
+  var cachedRemotePrefs = {};
+
+  function getFallbackCookie() {
+    try { return localStorage.getItem(COOKIE_KEY) || ''; } catch (_) { return ''; }
+  }
+  function saveFallbackCookie(val) {
+    if (!val) return;
+    try { localStorage.setItem(COOKIE_KEY, val); } catch (_) {}
+  }
+  function clearFallbackCookie() {
+    try { localStorage.removeItem(COOKIE_KEY); } catch (_) {}
+  }
+
+  async function appwriteFetch(path, method, bodyObj) {
+    var headers = {
+      'Content-Type': 'application/json',
+      'X-Appwrite-Project': APPWRITE_CONFIG.projectId
+    };
+    var fallback = getFallbackCookie();
+    if (fallback) headers['X-Fallback-Cookies'] = fallback;
+
+    var res;
+    try {
+      res = await fetch(APPWRITE_CONFIG.endpoint + path, {
+        method: method || 'GET',
+        headers: headers,
+        body: bodyObj ? JSON.stringify(bodyObj) : undefined
+      });
+    } catch (_) {
+      var host = window.location.hostname || 'this origin';
+      throw new Error('Cannot reach Appwrite from "' + host + '". Add this live hostname under Overview -> Platforms -> Web in your Appwrite Console.');
+    }
+
+    var newCookie = res.headers.get('X-Fallback-Cookies');
+    if (newCookie) saveFallbackCookie(newCookie);
+
+    var data = null;
+    try { data = await res.json(); } catch (_) {}
+
+    if (!res.ok) {
+      var msg = (data && data.message) ? data.message : ('Request failed (' + res.status + ')');
+      var err = new Error(msg);
+      err.code = res.status;
+      err.type = data && data.type;
+      throw err;
+    }
+    return data;
+  }
+
+  var gateState = { target: '', userId: '', seconds: 0, timer: null, busy: false };
+
+  var overlay = document.getElementById('abGateOverlay');
+  var shieldWrap = document.getElementById('abShieldWrap');
+  var gateTitle = document.getElementById('abGateTitle');
+  var subtitle = document.getElementById('abGateSubtitle');
+  var dot1 = document.getElementById('abDot1');
+  var dot2 = document.getElementById('abDot2');
+  var emailInput = document.getElementById('abEmailInput');
+  var stepReq = document.getElementById('abStepRequest');
+  var stepVer = document.getElementById('abStepVerify');
+  var sendBtn = document.getElementById('abSendOtpBtn');
+  var verifyBtn = document.getElementById('abVerifyOtpBtn');
+  var changeBtn = document.getElementById('abChangeTargetBtn');
+  var resendBtn = document.getElementById('abResendOtpBtn');
+  var targetDisplay = document.getElementById('abTargetDisplay');
+  var signOutBtn = document.getElementById('abSignOutBtn');
+  var topAuthBtn = document.getElementById('abTopAuthBtn');
+  var closeModalBtn = document.getElementById('abCloseModalBtn');
+  var skipBtn = document.getElementById('abSkipBtn');
+  var skipVerifyBtn = document.getElementById('abSkipVerifyBtn');
+  var statusReq = document.getElementById('abStatusRequest');
+  var statusVer = document.getElementById('abStatusVerify');
+  var modeBadge = document.getElementById('abModeBadge');
+  var otpBoxes = Array.prototype.slice.call(document.querySelectorAll('.ab-otp-digit'));
+
+  if (modeBadge) modeBadge.textContent = isLive ? 'Live Email OTP' : 'Setup Required';
+
+  function setStepDots(step) {
+    if (dot1) dot1.classList.toggle('active', step === 1);
+    if (dot2) dot2.classList.toggle('active', step === 2);
+  }
+
+  function showMsg(el, text, type) {
+    if (!el) return;
+    el.textContent = text;
+    el.className = 'ab-gate-msg show ' + type;
+  }
+
+  function clearMsg(el) {
+    if (!el) return;
+    el.textContent = '';
+    el.className = 'ab-gate-msg';
+  }
+
+  function openAuthModal() {
+    if (!overlay) return;
+    if (shieldWrap) shieldWrap.classList.remove('verified');
+    setStepDots(1);
+    if (stepVer) stepVer.classList.add('ab-step-hidden');
+    if (stepReq) stepReq.classList.remove('ab-step-hidden');
+    if (gateTitle) gateTitle.textContent = 'Welcome to App Box';
+    if (subtitle) subtitle.textContent = 'Sign in quickly with a free 6-digit Email OTP to sync your cart & orders, or skip straight to the website.';
+    clearMsg(statusReq);
+    clearMsg(statusVer);
+    overlay.classList.remove('ab-hidden');
+    document.body.classList.add('ab-locked');
+    requestAnimationFrame(function () {
+      overlay.classList.add('ab-open');
+    });
+  }
+
+  function closeAuthModal(markSkipped) {
+    if (markSkipped) {
+      try { sessionStorage.setItem(SKIP_KEY, '1'); } catch (_) {}
+    }
+    if (!overlay) return;
+    overlay.classList.remove('ab-open');
+    setTimeout(function () {
+      overlay.classList.add('ab-hidden');
+      document.body.classList.remove('ab-locked');
+    }, 180);
+  }
+
+  function unlockSite(userObj, immediate) {
+    isSignedIn = true;
+    var identity = (userObj && (userObj.email || userObj.name)) || gateState.target;
+    var normalizedUser = (typeof userObj === 'object' && userObj)
+      ? userObj
+      : { email: identity, name: '', prefs: {} };
+    if (!normalizedUser.email && identity && identity.indexOf('@') !== -1) {
+      normalizedUser.email = identity;
+    }
+
+    if (normalizedUser.prefs && typeof normalizedUser.prefs === 'object') {
+      cachedRemotePrefs = Object.assign({}, normalizedUser.prefs);
+    } else {
+      cachedRemotePrefs = {};
+    }
+
+    if (shieldWrap) shieldWrap.classList.add('verified');
+    if (topAuthBtn) {
+      topAuthBtn.classList.add('signed-in');
+      topAuthBtn.textContent = identity;
+    }
+    if (signOutBtn) signOutBtn.hidden = false;
+    if (window.ABApp && typeof window.ABApp.onUserSignedIn === 'function') {
+      window.ABApp.onUserSignedIn(normalizedUser);
+    }
+    if (immediate) {
+      closeAuthModal(false);
+      return;
+    }
+    showMsg(statusVer, 'Signed in! Your account and cart are synced.', 'success');
+    setTimeout(function () { closeAuthModal(false); }, 280);
+  }
+
+  function lockSite() {
+    isSignedIn = false;
+    cachedRemotePrefs = {};
+    if (shieldWrap) shieldWrap.classList.remove('verified');
+    if (topAuthBtn) {
+      topAuthBtn.classList.remove('signed-in');
+      topAuthBtn.textContent = 'Login';
+    }
+    if (signOutBtn) signOutBtn.hidden = true;
+    otpBoxes.forEach(function (inp) { inp.value = ''; inp.classList.remove('filled'); });
+    clearFallbackCookie();
+    closeAuthModal(false);
+    if (window.ABApp && typeof window.ABApp.onUserSignedOut === 'function') {
+      window.ABApp.onUserSignedOut();
+    }
+  }
+
+  function startTimer() {
+    if (gateState.timer) clearInterval(gateState.timer);
+    gateState.seconds = 60;
+    if (resendBtn) {
+      resendBtn.disabled = true;
+      resendBtn.textContent = 'Resend in 60s';
+    }
+    gateState.timer = setInterval(function () {
+      gateState.seconds -= 1;
+      if (gateState.seconds <= 0) {
+        clearInterval(gateState.timer);
+        gateState.timer = null;
+        if (resendBtn) {
+          resendBtn.disabled = false;
+          resendBtn.textContent = 'Resend OTP';
+        }
+      } else if (resendBtn) {
+        resendBtn.textContent = 'Resend in ' + gateState.seconds + 's';
+      }
+    }, 1000);
+  }
+
+  async function sendOtp() {
+    if (gateState.busy) return;
+    clearMsg(statusReq);
+    clearMsg(statusVer);
+
+    var email = emailInput ? emailInput.value.trim() : '';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      showMsg(statusReq, 'Enter a valid email address.', 'error');
+      return;
+    }
+
+    gateState.target = email;
+    gateState.busy = true;
+    if (sendBtn) { sendBtn.disabled = true; sendBtn.textContent = 'Sending Code...'; }
+
+    try {
+      var tokenRes = await appwriteFetch('/account/tokens/email', 'POST', {
+        userId: 'unique()',
+        email: email
+      });
+      gateState.userId = tokenRes && tokenRes.userId ? tokenRes.userId : '';
+      if (!gateState.userId) {
+        throw new Error('OTP request did not return a user ID. Check Appwrite Auth settings.');
+      }
+
+      if (stepReq) stepReq.classList.add('ab-step-hidden');
+      if (stepVer) stepVer.classList.remove('ab-step-hidden');
+      setStepDots(2);
+      if (gateTitle) gateTitle.textContent = 'Enter OTP Code';
+      if (subtitle) subtitle.textContent = 'We sent a 6-digit verification code to:';
+      if (targetDisplay) targetDisplay.textContent = email;
+      showMsg(statusVer, '6-digit code sent! Check your Inbox (and Spam folder).', 'info');
+      otpBoxes.forEach(function (inp) { inp.value = ''; inp.classList.remove('filled'); });
+      if (otpBoxes[0]) otpBoxes[0].focus();
+      startTimer();
+    } catch (err) {
+      showMsg(statusReq, (err && err.message) ? err.message : 'Failed to send Email OTP.', 'error');
+    } finally {
+      gateState.busy = false;
+      if (sendBtn) { sendBtn.disabled = false; sendBtn.textContent = 'Send 6-Digit Email OTP'; }
+    }
+  }
+
+  async function verifyOtp() {
+    if (gateState.busy) return;
+    clearMsg(statusVer);
+    var token = otpBoxes.map(function (inp) { return inp.value.trim(); }).join('');
+    if (!/^\d{6}$/.test(token)) {
+      showMsg(statusVer, 'Please enter all 6 digits.', 'error');
+      return;
+    }
+
+    gateState.busy = true;
+    if (verifyBtn) { verifyBtn.disabled = true; verifyBtn.textContent = 'Verifying...'; }
+
+    try {
+      try {
+        await appwriteFetch('/account/sessions/token', 'POST', {
+          userId: gateState.userId,
+          secret: token
+        });
+      } catch (sessionErr) {
+        if (sessionErr && sessionErr.type === 'user_session_already_exists') {
+          await appwriteFetch('/account/sessions/current', 'DELETE');
+          await appwriteFetch('/account/sessions/token', 'POST', {
+            userId: gateState.userId,
+            secret: token
+          });
+        } else {
+          throw sessionErr;
+        }
+      }
+
+      var user = await appwriteFetch('/account', 'GET');
+      unlockSite(user || { email: gateState.target, prefs: {} }, false);
+    } catch (err) {
+      showMsg(statusVer, (err && err.message) ? err.message : 'Invalid or expired OTP.', 'error');
+    } finally {
+      gateState.busy = false;
+      if (verifyBtn) { verifyBtn.disabled = false; verifyBtn.textContent = 'Verify & Continue'; }
+    }
+  }
+
+  async function performSignOut() {
+    if (isLive) {
+      try { await appwriteFetch('/account/sessions/current', 'DELETE'); } catch (_) {}
+    }
+    lockSite();
+  }
+
+  if (sendBtn) sendBtn.addEventListener('click', sendOtp);
+  if (verifyBtn) verifyBtn.addEventListener('click', verifyOtp);
+  if (resendBtn) resendBtn.addEventListener('click', sendOtp);
+  if (changeBtn) {
+    changeBtn.addEventListener('click', function () {
+      if (gateState.timer) clearInterval(gateState.timer);
+      if (stepVer) stepVer.classList.add('ab-step-hidden');
+      if (stepReq) stepReq.classList.remove('ab-step-hidden');
+      setStepDots(1);
+      if (gateTitle) gateTitle.textContent = 'Welcome to App Box';
+      if (subtitle) subtitle.textContent = 'Sign in quickly with a free 6-digit Email OTP to sync your cart & orders, or skip straight to the website.';
+      clearMsg(statusVer);
+    });
+  }
+
+  if (signOutBtn) signOutBtn.addEventListener('click', performSignOut);
+  if (topAuthBtn) {
+    topAuthBtn.addEventListener('click', function () {
+      if (isSignedIn && window.ABApp) window.ABApp.openAccountModal();
+      else openAuthModal();
+    });
+  }
+
+  window.ABAuth = {
+    openAuthModal: openAuthModal,
+    signOut: performSignOut,
+    savePrefs: async function (snapshotObj) {
+      if (!isLive || !isSignedIn) return false;
+      try {
+        /* Fetch latest account prefs first so Paradoverse's pv_account_json is never overwritten */
+        try {
+          var latestAcc = await appwriteFetch('/account', 'GET');
+          if (latestAcc && latestAcc.prefs && typeof latestAcc.prefs === 'object') {
+            cachedRemotePrefs = Object.assign({}, cachedRemotePrefs, latestAcc.prefs);
+          }
+        } catch (_) {}
+
+        var jsonStr = JSON.stringify(snapshotObj);
+        if (jsonStr.length > 58000) {
+          snapshotObj.orders = (snapshotObj.orders || []).slice(0, 8);
+          jsonStr = JSON.stringify(snapshotObj);
+        }
+        var mergedPrefs = Object.assign({}, cachedRemotePrefs, {
+          ab_account_json: jsonStr
+        });
+        var updated = await appwriteFetch('/account/prefs', 'PATCH', {
+          prefs: mergedPrefs
+        });
+        cachedRemotePrefs = (updated && typeof updated === 'object')
+          ? Object.assign({}, mergedPrefs, updated)
+          : mergedPrefs;
+        return true;
+      } catch (_) {
+        return false;
+      }
+    }
+  };
+
+  if (closeModalBtn) closeModalBtn.addEventListener('click', function () { closeAuthModal(true); });
+  if (skipBtn) skipBtn.addEventListener('click', function () { closeAuthModal(true); });
+  if (skipVerifyBtn) skipVerifyBtn.addEventListener('click', function () { closeAuthModal(true); });
+
+  if (overlay) {
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeAuthModal(true); });
+  }
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay && !overlay.classList.contains('ab-hidden')) closeAuthModal(true);
+  });
+
+  if (emailInput) {
+    emailInput.addEventListener('keydown', function (e) { if (e.key === 'Enter') sendOtp(); });
+  }
+
+  otpBoxes.forEach(function (inp, idx) {
+    inp.addEventListener('input', function (e) {
+      var clean = e.target.value.replace(/\D/g, '');
+      e.target.value = clean.slice(0, 1);
+      e.target.classList.toggle('filled', Boolean(e.target.value));
+      if (clean && idx < otpBoxes.length - 1) {
+        otpBoxes[idx + 1].focus();
+      } else if (clean && idx === otpBoxes.length - 1) {
+        var allFilled = otpBoxes.every(function (b) { return /^\d$/.test(b.value); });
+        if (allFilled) setTimeout(verifyOtp, 100);
+      }
+    });
+    inp.addEventListener('keydown', function (e) {
+      if (e.key === 'Backspace' && !inp.value && idx > 0) otpBoxes[idx - 1].focus();
+      else if (e.key === 'Enter') verifyOtp();
+    });
+    inp.addEventListener('paste', function (e) {
+      var pasted = (e.clipboardData || window.clipboardData).getData('text').replace(/\D/g, '');
+      if (!pasted) return;
+      e.preventDefault();
+      pasted.slice(0, 6).split('').forEach(function (ch, i) {
+        if (otpBoxes[i]) { otpBoxes[i].value = ch; otpBoxes[i].classList.add('filled'); }
+      });
+      if (otpBoxes[Math.min(pasted.length, 5)]) otpBoxes[Math.min(pasted.length, 5)].focus();
+      if (pasted.length >= 6) setTimeout(verifyOtp, 100);
+    });
+  });
+
+  (async function restore() {
+    var skipped = false;
+    try { skipped = sessionStorage.getItem(SKIP_KEY) === '1'; } catch (_) {}
+    if (isLive) {
+      try {
+        var user = await appwriteFetch('/account', 'GET');
+        if (user && (user.email || user.name)) {
+          unlockSite(user, true);
+          return;
+        }
+      } catch (_) {}
+    }
+    if (!skipped) {
+      setTimeout(openAuthModal, 350);
+    }
+  })();
+})();
+</script>
+</body>
+</html>
